@@ -84,6 +84,37 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     resultb5s4 = [false,false,false,false,false,false,false,false];
     resultb5s5 = [false,false,false,false,false,false,false,false];
     resultb5s6 = [false,false,false,false,false,false,false,false];
+
+    wordorderb1s1 = [0,0,0,0,0,0,0,0];
+    wordorderb1s2 = [0,0,0,0,0,0,0,0];
+    wordorderb1s3 = [0,0,0,0,0,0,0,0];
+    wordorderb1s4 = [0,0,0,0,0,0,0,0];
+    wordorderb1s5 = [0,0,0,0,0,0,0,0];
+    wordorderb1s6 = [0,0,0,0,0,0,0,0];
+    wordorderb2s1 = [0,0,0,0,0,0,0,0];
+    wordorderb2s2 = [0,0,0,0,0,0,0,0];
+    wordorderb2s3 = [0,0,0,0,0,0,0,0];
+    wordorderb2s4 = [0,0,0,0,0,0,0,0];
+    wordorderb2s5 = [0,0,0,0,0,0,0,0];
+    wordorderb2s6 = [0,0,0,0,0,0,0,0];
+    wordorderb3s1 = [0,0,0,0,0,0,0,0];
+    wordorderb3s2 = [0,0,0,0,0,0,0,0];
+    wordorderb3s3 = [0,0,0,0,0,0,0,0];
+    wordorderb3s4 = [0,0,0,0,0,0,0,0];
+    wordorderb3s5 = [0,0,0,0,0,0,0,0];
+    wordorderb3s6 = [0,0,0,0,0,0,0,0];
+    wordorderb4s1 = [0,0,0,0,0,0,0,0];
+    wordorderb4s2 = [0,0,0,0,0,0,0,0];
+    wordorderb4s3 = [0,0,0,0,0,0,0,0];
+    wordorderb4s4 = [0,0,0,0,0,0,0,0];
+    wordorderb4s5 = [0,0,0,0,0,0,0,0];
+    wordorderb4s6 = [0,0,0,0,0,0,0,0];
+    wordorderb5s1 = [0,0,0,0,0,0,0,0];
+    wordorderb5s2 = [0,0,0,0,0,0,0,0];
+    wordorderb5s3 = [0,0,0,0,0,0,0,0];
+    wordorderb5s4 = [0,0,0,0,0,0,0,0];
+    wordorderb5s5 = [0,0,0,0,0,0,0,0];
+    wordorderb5s6 = [0,0,0,0,0,0,0,0];
   }
 
   void _resultsscreen() {

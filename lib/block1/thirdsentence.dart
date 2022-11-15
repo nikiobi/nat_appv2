@@ -751,6 +751,8 @@ class _ThirdSentenceSetupState extends State<ThirdSentenceSetup> {
       imagetoimage72 = SizedBox();
       imagetoimage81 = SizedBox();
       imagetoimage82 = SizedBox();
+
+      wordorderb1s3 = [0,0,0,0,0,0,0,0];
     });
   }
 

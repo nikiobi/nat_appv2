@@ -572,6 +572,8 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
       imagetoimage62 = SizedBox();
       imagetoimage71 = SizedBox();
       imagetoimage72 = SizedBox();
+
+      wordorderb1s1 = [0,0,0,0,0,0,0,0];
     });
   }
 

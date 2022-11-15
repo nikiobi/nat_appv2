@@ -753,6 +753,8 @@ class _ThirdSentenceBlock2State extends State<ThirdSentenceBlock2> {
       imagetoimage72 = SizedBox();
       imagetoimage81 = SizedBox();
       imagetoimage82 = SizedBox();
+
+      wordorderb2s3 = [0,0,0,0,0,0,0,0];
     });
   }
 

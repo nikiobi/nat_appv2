@@ -751,6 +751,8 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
       imagetoimage72 = SizedBox();
       imagetoimage81 = SizedBox();
       imagetoimage82 = SizedBox();
+
+      wordorderb1s5 = [0,0,0,0,0,0,0,0];
     });
   }
 

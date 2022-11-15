@@ -751,6 +751,8 @@ class _FifthSentenceBlock2State extends State<FifthSentenceBlock2> {
       imagetoimage72 = SizedBox();
       imagetoimage81 = SizedBox();
       imagetoimage82 = SizedBox();
+
+      wordorderb2s5 = [0,0,0,0,0,0,0,0];
     });
   }
 

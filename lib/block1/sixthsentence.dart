@@ -568,6 +568,8 @@ class _SixthSentenceBlock1State extends State<SixthSentenceBlock1> {
       imagetoimage62 = SizedBox();
       imagetoimage71 = SizedBox();
       imagetoimage72 = SizedBox();
+
+      wordorderb1s6 = [0,0,0,0,0,0,0,0];
     });
   }
 

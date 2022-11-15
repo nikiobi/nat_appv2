@@ -734,6 +734,8 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
       imagetoimage72 = SizedBox();
       imagetoimage81 = SizedBox();
       imagetoimage82 = SizedBox();
+
+      wordorderb2s1 = [0,0,0,0,0,0,0,0];
     });
   }
 
