@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/HomeScreen.dart';
+import 'package:nat_appv2/Http-request-manager.dart';
 
 class NewUploadScreen extends StatefulWidget {
   const NewUploadScreen({super.key});
@@ -16,7 +17,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Daten Hochladen', textScaleFactor: 2),
+        title: const Text('Ergebnisse Hochladen', textScaleFactor: 2),
         centerTitle: true,
         toolbarHeight: 100,
         automaticallyImplyLeading: false,
@@ -28,6 +29,10 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             const SizedBox(height: 40),
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
+
+            const SizedBox(height: 40),
+            OutlinedButton(
+                style: homescreenButtonstyle, onPressed: _uploadData, child: const Text('Ergebnisse hochladen')),
           ],
         ),
       ),
@@ -48,5 +53,9 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             }
         )
     );
+  }
+
+  void _uploadData() {
+    HttpRequestManager().makePostRequest();
   }
 }

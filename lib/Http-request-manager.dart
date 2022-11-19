@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart';
+import 'dart:convert';
 
-class HomePageManager {
+class HttpRequestManager {
   final resultNotifier = ValueNotifier<RequestState>(RequestInitial());
-  static const urlPrefix = 'https://jsonplaceholder.typicode.com';
+  static const urlPrefix = 'https://stuz-redcap.ukl.uni-freiburg.de/api';
 
   Future<void> makeGetRequest() async {
     resultNotifier.value = RequestLoadInProgress();
@@ -17,10 +18,10 @@ class HomePageManager {
 
   Future<void> makePostRequest() async {
     resultNotifier.value = RequestLoadInProgress();
-    final url = Uri.parse('$urlPrefix/posts');
-    final headers = {"Content-type": "application/json"};
-    final json = '{"title": "Hello", "body": "body text", "userId": 1}';
-    final response = await post(url, headers: headers, body: json);
+    final url = Uri.parse('$urlPrefix');
+    final headers = fields;
+    final records = json.encode(record);
+    final response = await post(url, headers: headers, body: records);
     print('Status code: ${response.statusCode}');
     print('Body: ${response.body}');
     _handleResponse(response);
@@ -64,6 +65,15 @@ class HomePageManager {
       resultNotifier.value = RequestLoadSuccess(response.body);
     }
   }
+
+  final fields = {
+    'token': 'A42EF3B269922666C5B4E7811DF2C490',
+    'content': 'record',
+    'format': 'json',
+    'type': 'flat',
+    };
+
+  final record = {'mesulam_nat_a1': 1};
 }
 
 class RequestState {
