@@ -25,7 +25,7 @@ class HttpRequestManager {
   };
 
   final record = {
-    'record_id': '3455698',
+    'PIZ': '3455698',
     'mesulam_nat_a1': '1'
   };
 

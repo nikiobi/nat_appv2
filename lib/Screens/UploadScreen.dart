@@ -18,7 +18,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   @override
   Widget build(BuildContext context) {
     const TextStyle headlinetyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 18, decoration: TextDecoration.underline);
-
+    final ButtonStyle homescreenButtonstyle = OutlinedButton.styleFrom(backgroundColor: Colors.blueGrey, primary: Colors.white,textStyle: const TextStyle(fontSize: 50), fixedSize: Size(1000, 60));
 
     return Scaffold(
       appBar: AppBar(
@@ -111,7 +111,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
               ),
             ),
 
-            /*
+
             const SizedBox(height: 40),
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
@@ -119,7 +119,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             const SizedBox(height: 40),
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _uploadData, child: const Text('Ergebnisse hochladen')),
-             */
+
           ],
         ),
       ),
