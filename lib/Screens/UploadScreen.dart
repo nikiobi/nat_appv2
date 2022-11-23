@@ -10,15 +10,20 @@ class NewUploadScreen extends StatefulWidget {
 }
 
 class _NewUploadScreenState extends State<NewUploadScreen> {
-  bool isSelected1 = false;
-  bool isSelected2 = false;
-  bool isSelected3 = false;
-  bool isSelected4 = false;
+  bool is1544selected = false;
+  bool is4549selected = false;
+  bool is5054selected = false;
+  bool is5559selected = false;
+  bool is6064selected = false;
+  bool is6569selected = false;
+  bool is70selected = false;
 
   @override
   Widget build(BuildContext context) {
     const TextStyle headlinetyle = TextStyle(fontWeight: FontWeight.bold, fontSize: 18, decoration: TextDecoration.underline);
-    final ButtonStyle homescreenButtonstyle = OutlinedButton.styleFrom(backgroundColor: Colors.blueGrey, primary: Colors.white,textStyle: const TextStyle(fontSize: 50), fixedSize: Size(1000, 60));
+    final ButtonStyle homescreenButtonstyle = OutlinedButton.styleFrom(backgroundColor: Colors.blueGrey, primary: Colors.white,textStyle: const TextStyle(fontSize: 20), fixedSize: Size(1200, 20));
+    const double leftbound = 400;
+    const double rightbound = 400;
 
     return Scaffold(
       appBar: AppBar(
@@ -31,12 +36,12 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 1000, 0),
+              padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
               child: Text('Serverkonfiguration', style: headlinetyle),
               ),
 
             const Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 1000, 10),
+              padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 10),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -46,7 +51,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             ),
 
             const Padding(
-              padding: EdgeInsets.fromLTRB(20, 10, 1000, 20),
+              padding: EdgeInsets.fromLTRB(leftbound, 10, rightbound, 20),
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -56,20 +61,20 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             ),
 
             const Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 1000, 20),
+              padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
               child: Text('Patienten-Informationen', style: headlinetyle),
             ),
 
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 20, 1000, 10),
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
               child: StatefulBuilder(
                 builder: (context, setState) => CheckboxListTile(
-                  title: const Text('40-45'),
-                  value: isSelected1,
+                  title: const Text('15 - 44'),
+                  value: is1544selected,
                   onChanged: (value) {
-                    if (isSelected2 == false && isSelected3 == false) {
+                    if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
                       setState(() {
-                        isSelected1 = !isSelected1;
+                        is1544selected = !is1544selected;
                       });
                     }
                   },
@@ -78,15 +83,15 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             ),
 
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 0, 1000, 10),
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
               child: StatefulBuilder(
                 builder: (context, setState) => CheckboxListTile(
-                  title: const Text('45 - 50'),
-                  value: isSelected2,
+                  title: const Text('45 - 49'),
+                  value: is4549selected,
                   onChanged: (value) {
-                    if (isSelected3 == false && isSelected1 == false) {
+                    if (is1544selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
                       setState(() {
-                        isSelected2 = !isSelected2;
+                        is4549selected = !is4549selected;
                       });
                     }
                   },
@@ -95,15 +100,15 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
             ),
 
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 0, 1000, 10),
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
               child: StatefulBuilder(
                 builder: (context, setState) => CheckboxListTile(
-                  title: const Text('50 - 55'),
-                  value: isSelected3,
+                  title: const Text('50 - 54'),
+                  value: is5054selected,
                   onChanged: (value) {
-                    if (isSelected1 == false && isSelected2 == false) {
+                    if (is4549selected == false && is1544selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
                       setState(() {
-                        isSelected3 = !isSelected3;
+                        is5054selected = !is5054selected;
                       });
                     }
                   },
@@ -111,15 +116,85 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
               ),
             ),
 
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
+              child: StatefulBuilder(
+                builder: (context, setState) => CheckboxListTile(
+                  title: const Text('55 - 59'),
+                  value: is5559selected,
+                  onChanged: (value) {
+                    if (is4549selected == false && is5054selected == false && is1544selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
+                      setState(() {
+                        is5559selected = !is5559selected;
+                      });
+                    }
+                  },
+                ),
+              ),
+            ),
 
-            const SizedBox(height: 40),
-            OutlinedButton(
-                style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
+              child: StatefulBuilder(
+                builder: (context, setState) => CheckboxListTile(
+                  title: const Text('60 - 64'),
+                  value: is6064selected,
+                  onChanged: (value) {
+                    if (is4549selected == false && is5054selected == false && is5559selected == false && is1544selected == false && is6569selected == false && is70selected == false) {
+                      setState(() {
+                        is6064selected = !is6064selected;
+                      });
+                    }
+                  },
+                ),
+              ),
+            ),
 
-            const SizedBox(height: 40),
-            OutlinedButton(
-                style: homescreenButtonstyle, onPressed: _uploadData, child: const Text('Ergebnisse hochladen')),
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
+              child: StatefulBuilder(
+                builder: (context, setState) => CheckboxListTile(
+                  title: const Text('65 - 69'),
+                  value: is6569selected,
+                  onChanged: (value) {
+                    if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is1544selected == false && is70selected == false) {
+                      setState(() {
+                        is6569selected = !is6569selected;
+                      });
+                    }
+                  },
+                ),
+              ),
+            ),
 
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
+              child: StatefulBuilder(
+                builder: (context, setState) => CheckboxListTile(
+                  title: const Text('70+'),
+                  value: is70selected,
+                  onChanged: (value) {
+                    if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is1544selected == false) {
+                      setState(() {
+                        is70selected = !is70selected;
+                      });
+                    }
+                  },
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 5),
+              child: OutlinedButton(
+                  style: homescreenButtonstyle, onPressed: _uploadData, child: const Text('Ergebnisse hochladen')),
+            ),
+
+            Padding(
+              padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 5),
+              child: OutlinedButton(
+                  style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
+            ),
           ],
         ),
       ),

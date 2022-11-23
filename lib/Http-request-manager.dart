@@ -25,7 +25,7 @@ class HttpRequestManager {
   };
 
   final record = {
-    'PIZ': '3455698',
+    'piz': '3455698',
     'mesulam_nat_a1': '1'
   };
 
