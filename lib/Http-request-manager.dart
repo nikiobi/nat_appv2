@@ -1,14 +1,15 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
+import 'package:nat_appv2/Screens/UploadScreen.dart';
 
 class HttpRequestManager {
   final resultNotifier = ValueNotifier<RequestState>(RequestInitial());
-  static const urlPrefix = 'https://stuz-redcap.ukl.uni-freiburg.de';
+  static const urlPrefix = 'https://stuz-redcap.ukl.uni-freiburg.de/api/';
 
   Future<void> makePostRequest() async {
     resultNotifier.value = RequestLoadInProgress();
-    final url = Uri.parse('$urlPrefix/api');
+    final url = Uri.parse(urlPrefix);
     final headers = fields;
     final records = json.encode(record);
     final response = await post(url, headers: headers, body: records);
@@ -21,12 +22,16 @@ class HttpRequestManager {
     'token': 'A42EF3B269922666C5B4E7811DF2C490',
     'content': 'record',
     'format': 'json',
+    'returnFormat': 'json',
     'type': 'flat',
   };
 
   final record = {
-    'piz': '3455698',
-    'mesulam_nat_a1': '1'
+    'token': 'A42EF3B269922666C5B4E7811DF2C490',
+    'record': '3455698',
+    'redcap_event_name': 'lsp_akut_arm_1',
+    'field_name': 'mesulam_nat_p2',
+    'value': '1'
   };
 
   void _handleResponse(Response response) {
