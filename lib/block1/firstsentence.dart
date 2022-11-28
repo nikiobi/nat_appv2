@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'secondsentence.dart';
-import 'package:nat_appv2/GlobalResultLists.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 
 class FirstSentenceSetup extends StatefulWidget {
   const FirstSentenceSetup({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/block2/FourthSentenceBlock2.dart';
-import 'package:nat_appv2/GlobalResultLists.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 
 
 class ThirdSentenceBlock2 extends StatefulWidget {

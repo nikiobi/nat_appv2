@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/block5/SixthSentenceBlock5.dart';
-import 'package:nat_appv2/GlobalResultLists.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 
 class FifthSentenceBlock5 extends StatefulWidget {
   const FifthSentenceBlock5({super.key});

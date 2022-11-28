@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/NewGameScreen.dart';
-import 'package:nat_appv2/GlobalResultLists.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 
 class SixthSentenceBlock5 extends StatefulWidget {
   const SixthSentenceBlock5({super.key});

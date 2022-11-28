@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/NewGameScreen.dart';
 import 'package:nat_appv2/Screens/ResultScreen.dart';
-import 'package:nat_appv2/GlobalResultLists.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key, required this.title}) : super(key: key);

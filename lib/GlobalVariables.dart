@@ -93,3 +93,9 @@ List<int> wordorderb5s3 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s4 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s5 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s6 = [0,0,0,0,0,0,0,0];
+
+bool uploadsuccessfull = false;
+bool newUrl = false;
+bool newToken = false;
+String urlInput = '';
+String tokenInput = '';

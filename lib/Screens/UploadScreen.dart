@@ -1,6 +1,10 @@
+import 'package:elegant_notification/resources/arrays.dart';
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/HomeScreen.dart';
 import 'package:nat_appv2/Http-request-manager.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
+import 'package:elegant_notification/elegant_notification.dart';
+
 
 class NewUploadScreen extends StatefulWidget {
   const NewUploadScreen({super.key});
@@ -17,8 +21,8 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   bool is6064selected = false;
   bool is6569selected = false;
   bool is70selected = false;
-  final inputToken = TextEditingController();
-  final inputUrl = TextEditingController();
+  final inputTokenCtrl = TextEditingController();
+  final inputUrlCtrl = TextEditingController();
 
 
   @override
@@ -48,37 +52,76 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
               ),
 
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 10),
+                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                child: RichText(
+                  text: const TextSpan(
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.black
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: 'Aktuelle URL: '),
+                      TextSpan(text: ' https://stuz-redcap.ukl.uni-freiburg.de/api/.', style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(text: ' Gebe andere URL ein, falls andere URL verwendet werden soll.')
+                    ],
+                  ),
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 10),
                 child: TextFormField(
-                  controller: inputUrl,
+                  controller: inputUrlCtrl,
+                  keyboardType: TextInputType.text,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Server-Url',
                   ),
+
+                  /*
                   validator: (String? value) {
                     if (value == null || value.isEmpty) {
                       return 'Bitte Server-Url eingeben';
                     }
                     return null;
                   },
-
+                  */
                 ),
               ),
 
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 10, rightbound, 20),
+                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                child: RichText(
+                  text: const TextSpan(
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: 'Aktueller Token: '),
+                      TextSpan(text: ' A42EF3B269922666C5B4E7811DF2C490. ', style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(text: ' Gebe anderen Token ein, falls anderer Token verwendet werden soll.')
+                    ],
+                  ),
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 20),
                 child: TextFormField(
-                  controller: inputToken,
+                  controller: inputTokenCtrl,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Access-Token',
                   ),
+                  /*
                   validator: (String? value) {
                     if (value == null || value.isEmpty) {
                       return 'Bitte Access-Token eingeben';
                     }
                     return null;
                   },
+                  */
                 ),
               ),
 
@@ -224,11 +267,11 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                 child: OutlinedButton(
                     style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
               ),
+
             ],
           ),
         )
       ),
-
     );
   }
 
@@ -247,6 +290,32 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   }
 
   void _uploadData() {
+    // inputUrl = inputTokenCtrl.toString();
+    // inputToken = inputTokenCtrl.toString();
+    if (inputUrlCtrl.text != 'https://stuz-redcap.ukl.uni-freiburg.de/api/' && inputUrlCtrl.text != '') {
+      urlInput = inputUrlCtrl.text;
+      newUrl = true;
+    }
+    if (inputTokenCtrl.text != 'A42EF3B269922666C5B4E7811DF2C490' && inputTokenCtrl.text != '') {
+      tokenInput = inputTokenCtrl.text;
+      newToken = true;
+    }
+
     HttpRequestManager().makePostRequest();
+
+    Future.delayed(const Duration(seconds: 2), () {
+      if (uploadsuccessfull) {
+        ElegantNotification.success(
+          description:  Text("Daten wurden erfolgreich hochgeladen", textScaleFactor: 2),
+        ).show(context);
+      } else {
+        ElegantNotification.error(
+          description:  Text("Es gab einen Fehler beim Hochladen der Daten", textScaleFactor: 2),
+        ).show(context);
+      }
+    });
+
+    newToken = false;
+    newUrl = false;
   }
 }
