@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
-import 'dart:convert';
 import 'package:nat_appv2/GlobalVariables.dart';
 
 class HttpRequestManager {
@@ -10,7 +9,7 @@ class HttpRequestManager {
   static const token = 'A42EF3B269922666C5B4E7811DF2C490';
 
   Future<void> makePostRequest() async {
-    print(newToken);
+    uploadsuccessfull = false;
     resultNotifier.value = RequestLoadInProgress();
     final url = Uri.parse((newUrl == true ? urlInput : '$urlPrefix/api/'));
     final body = {
@@ -42,7 +41,7 @@ class HttpRequestManager {
     }
   }
 
-
+/*
   Future<void> makeGetRequest() async {
     resultNotifier.value = RequestLoadInProgress();
     final url = Uri.parse('$urlPrefix/api/');
@@ -53,7 +52,6 @@ class HttpRequestManager {
     _handleResponse(response);
   }
 
-/*
   Future<void> makePutRequest() async {
     resultNotifier.value = RequestLoadInProgress();
     final url = Uri.parse('$urlPrefix/posts/1');
