@@ -18,7 +18,10 @@ class HttpRequestManager {
       'action': 'import',
       'format': 'json',
       'type': 'eav',
-      'data': '[{"record": "3455698","redcap_event_name":"lsp_akut_arm_1","field_name":"mesulam_nat_p2","value":"0"}]',
+      'data': '['
+          '{"record": "$pizInput","redcap_event_name":"lsp_akut_arm_1","field_name":"mesulam_nat_p2","value":"1"},'
+          '{"record": "$pizInput","redcap_event_name":"lsp_akut_arm_1","field_name":"mesulam_nat_or3","value":"0"}'
+          ']',
       'returnContent': 'count',
       'returnFormat': 'json'
     };

@@ -23,6 +23,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   bool is70selected = false;
   final inputTokenCtrl = TextEditingController();
   final inputUrlCtrl = TextEditingController();
+  final pizCtrl = TextEditingController();
 
 
   @override
@@ -128,6 +129,23 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
               const Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
                 child: Text('Patienten-Informationen', style: headlinetyle),
+              ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 10, rightbound, 0),
+                child: TextFormField(
+                  controller: pizCtrl,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'PIZ',
+                  ),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty || value.length < 7) {
+                      return 'Bitte PIZ eingeben (7-stellig)';
+                    }
+                    return null;
+                  },
+                ),
               ),
 
               Padding(
@@ -290,25 +308,25 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   }
 
   void _uploadData() {
-    // inputUrl = inputTokenCtrl.toString();
-    // inputToken = inputTokenCtrl.toString();
-    if (inputUrlCtrl.text != 'https://stuz-redcap.ukl.uni-freiburg.de/api/' && inputUrlCtrl.text != '') {
+    if (inputUrlCtrl.text != '') {
       urlInput = inputUrlCtrl.text;
       newUrl = true;
     }
-    if (inputTokenCtrl.text != 'A42EF3B269922666C5B4E7811DF2C490' && inputTokenCtrl.text != '') {
+    if (inputTokenCtrl.text != '') {
       tokenInput = inputTokenCtrl.text;
       newToken = true;
     }
 
+    pizInput = int.parse(pizCtrl.text);
+
     HttpRequestManager().makePostRequest();
 
     Future.delayed(const Duration(seconds: 2), () {
-      if (uploadsuccessfull) {
+      if (uploadsuccessfull == true) {
         ElegantNotification.success(
           description:  Text("Daten wurden erfolgreich hochgeladen", textScaleFactor: 2),
         ).show(context);
-      } else {
+      } else if (uploadsuccessfull == false) {
         ElegantNotification.error(
           description:  Text("Es gab einen Fehler beim Hochladen der Daten", textScaleFactor: 2),
         ).show(context);

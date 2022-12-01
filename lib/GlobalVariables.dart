@@ -99,3 +99,4 @@ bool newUrl = false;
 bool newToken = false;
 String urlInput = '';
 String tokenInput = '';
+int pizInput = 0;
