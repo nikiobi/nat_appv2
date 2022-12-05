@@ -24,6 +24,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   final inputTokenCtrl = TextEditingController();
   final inputUrlCtrl = TextEditingController();
   final pizCtrl = TextEditingController();
+  final eventnameCtrl = TextEditingController();
 
 
   @override
@@ -78,15 +79,6 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                     border: OutlineInputBorder(),
                     hintText: 'Server-Url',
                   ),
-
-                  /*
-                  validator: (String? value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Bitte Server-Url eingeben';
-                    }
-                    return null;
-                  },
-                  */
                 ),
               ),
 
@@ -115,24 +107,16 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                     border: OutlineInputBorder(),
                     hintText: 'Access-Token',
                   ),
-                  /*
-                  validator: (String? value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Bitte Access-Token eingeben';
-                    }
-                    return null;
-                  },
-                  */
                 ),
               ),
 
               const Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                padding: EdgeInsets.fromLTRB(leftbound, 50, rightbound, 0),
                 child: Text('Patienten-Informationen', style: headlinetyle),
               ),
 
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 10, rightbound, 0),
+                padding: EdgeInsets.fromLTRB(leftbound, 10, rightbound, 20),
                 child: TextFormField(
                   controller: pizCtrl,
                   decoration: const InputDecoration(
@@ -148,6 +132,40 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                 ),
               ),
 
+              const Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 50, rightbound, 0),
+                child: Text('Eventkonfiguration', style: headlinetyle),
+              ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                child: RichText(
+                  text: const TextSpan(
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.black
+                    ),
+                    children: <TextSpan>[
+                      TextSpan(text: 'Aktueller Eventname: '),
+                      TextSpan(text: ' lsp_akut_arm_1. ', style: TextStyle(fontWeight: FontWeight.bold)),
+                      TextSpan(text: ' Gebe anderen Eventnamen ein, falls anderer Eventname verwendet werden soll.')
+                    ],
+                  ),
+                ),
+              ),
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 20),
+                child: TextFormField(
+                  controller: eventnameCtrl,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Eventname',
+                  ),
+                ),
+              ),
+
+              /*
               Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
                 child: StatefulBuilder(
@@ -267,9 +285,10 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                   ),
                 ),
               ),
+              */
 
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 5),
+                padding: EdgeInsets.fromLTRB(leftbound, 50, rightbound, 5),
                 child: ElevatedButton(
                     style: homescreenButtonstyle,
                     onPressed: () {
@@ -316,6 +335,10 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
       tokenInput = inputTokenCtrl.text;
       newToken = true;
     }
+    if (eventnameCtrl.text != '') {
+      eventnameInput = inputTokenCtrl.text;
+      newEventname = true;
+    }
 
     pizInput = int.parse(pizCtrl.text);
 
@@ -335,5 +358,6 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
 
     newToken = false;
     newUrl = false;
+    newEventname = false;
   }
 }
