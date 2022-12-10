@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/NewGameScreen.dart';
-import 'package:nat_appv2/Screens/ResultScreen.dart';
 import 'package:nat_appv2/GlobalVariables.dart';
 
 class MyHomeScreen extends StatefulWidget {
@@ -33,9 +32,6 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _newtest, child: const Text('Neuer Test')),
 
-            const SizedBox(height: buttonheight),
-            OutlinedButton(
-                style: homescreenButtonstyle, onPressed: _resultsscreen, child: const Text('Ergebnisse')),
           ],
         ),
       ),
@@ -115,20 +111,6 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     wordorderb5s4 = [0,0,0,0,0,0,0,0];
     wordorderb5s5 = [0,0,0,0,0,0,0,0];
     wordorderb5s6 = [0,0,0,0,0,0,0,0];
-  }
-
-  void _resultsscreen() {
-    Navigator.of(context).push(
-        MaterialPageRoute<void>(
-            builder: (context) {
-              return const Scaffold(
-                  body: Center(
-                    child: NewResultScreen(),
-                  )
-              );
-            }
-        )
-    );
   }
 }
 
