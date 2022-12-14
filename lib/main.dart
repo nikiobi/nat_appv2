@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'Screens/HomeScreen.dart';
+import 'SharedPreferencesManager.dart';
 
-void main() {
+void main(){
   runApp(const MyApp());
 }
 

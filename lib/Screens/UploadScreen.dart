@@ -1,9 +1,9 @@
-import 'package:elegant_notification/resources/arrays.dart';
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/HomeScreen.dart';
 import 'package:nat_appv2/Http-request-manager.dart';
 import 'package:nat_appv2/GlobalVariables.dart';
 import 'package:elegant_notification/elegant_notification.dart';
+import 'package:nat_appv2/Screens/UploadSettingsScreen.dart';
 
 
 class NewUploadScreen extends StatefulWidget {
@@ -14,17 +14,15 @@ class NewUploadScreen extends StatefulWidget {
 }
 
 class _NewUploadScreenState extends State<NewUploadScreen> {
-  bool is1544selected = false;
-  bool is4549selected = false;
-  bool is5054selected = false;
-  bool is5559selected = false;
-  bool is6064selected = false;
-  bool is6569selected = false;
-  bool is70selected = false;
   final inputTokenCtrl = TextEditingController();
   final inputUrlCtrl = TextEditingController();
   final pizCtrl = TextEditingController();
   final eventnameCtrl = TextEditingController();
+
+  String dropdownValueurl = newurls.first;
+  String dropdownValuetoken = newtokens.first;
+  String dropdownEventname = neweventnames.first;
+
 
 
   @override
@@ -34,6 +32,7 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
     const double leftbound = 400;
     const double rightbound = 400;
     final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -53,62 +52,67 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                 child: Text('Serverkonfiguration', style: headlinetyle),
               ),
 
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
-                child: RichText(
-                  text: const TextSpan(
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.black
-                    ),
-                    children: <TextSpan>[
-                      TextSpan(text: 'Aktuelle URL: '),
-                      TextSpan(text: ' https://stuz-redcap.ukl.uni-freiburg.de/api/.', style: TextStyle(fontWeight: FontWeight.bold)),
-                      TextSpan(text: ' Gebe andere URL ein, falls andere URL verwendet werden soll.')
-                    ],
-                  ),
-                ),
+                child: Text('Wähle URL:')
               ),
 
               Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 10),
-                child: TextFormField(
-                  controller: inputUrlCtrl,
-                  keyboardType: TextInputType.text,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Server-Url',
+                child: DropdownButton<String>(
+                  value: dropdownValueurl,
+                  elevation: 16,
+                  style: const TextStyle(color: Colors.black),
+                  underline: Container(
+                    height: 2,
+                    color: Colors.black,
                   ),
-                ),
+                  onChanged: (String? value) {
+                    // This is called when the user selects an item.
+                    setState(() {
+                      dropdownValueurl = value!;
+                    });
+                  },
+                  items: newurls.map<DropdownMenuItem<String>>((String value) {
+                    return DropdownMenuItem<String>(
+                      value: value,
+                      child: Text(value),
+                    );
+                  }).toList(),
+                )
+              ),
+
+              const Padding(
+                  padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                  child: Text('Wähle Token:')
               ),
 
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
-                child: RichText(
-                  text: const TextSpan(
-                    style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.black
+                  padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 10),
+                  child: DropdownButton<String>(
+                    value: dropdownValuetoken,
+                    elevation: 16,
+                    style: const TextStyle(color: Colors.black),
+                    underline: Container(
+                      height: 2,
+                      color: Colors.black,
                     ),
-                    children: <TextSpan>[
-                      TextSpan(text: 'Aktueller Token: '),
-                      TextSpan(text: ' A42EF3B269922666C5B4E7811DF2C490. ', style: TextStyle(fontWeight: FontWeight.bold)),
-                      TextSpan(text: ' Gebe anderen Token ein, falls anderer Token verwendet werden soll.')
-                    ],
-                  ),
-                ),
+                    onChanged: (String? value) {
+                      // This is called when the user selects an item.
+                      setState(() {
+                        dropdownValuetoken = value!;
+                      });
+                    },
+
+                    items: newtokens.map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      );
+                    }).toList(),
+                  )
               ),
 
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 20),
-                child: TextFormField(
-                  controller: inputTokenCtrl,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Access-Token',
-                  ),
-                ),
-              ),
 
               const Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 50, rightbound, 0),
@@ -137,155 +141,36 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
                 child: Text('Eventkonfiguration', style: headlinetyle),
               ),
 
+              const Padding(
+                  padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
+                  child: Text('Wähle Eventname:')
+              ),
+
               Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 20, rightbound, 0),
-                child: RichText(
-                  text: const TextSpan(
-                    style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.black
+                  padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 10),
+                  child: DropdownButton<String>(
+                    value: dropdownEventname,
+                    elevation: 16,
+                    style: const TextStyle(color: Colors.black),
+                    underline: Container(
+                      height: 2,
+                      color: Colors.black,
                     ),
-                    children: <TextSpan>[
-                      TextSpan(text: 'Aktueller Eventname: '),
-                      TextSpan(text: ' lsp_akut_arm_1. ', style: TextStyle(fontWeight: FontWeight.bold)),
-                      TextSpan(text: ' Gebe anderen Eventnamen ein, falls anderer Eventname verwendet werden soll.')
-                    ],
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 5, rightbound, 20),
-                child: TextFormField(
-                  controller: eventnameCtrl,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Eventname',
-                  ),
-                ),
-              ),
-
-              /*
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('15 - 44'),
-                    value: is1544selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
-                        setState(() {
-                          is1544selected = !is1544selected;
-                        });
-                      }
+                    onChanged: (String? value) {
+                      // This is called when the user selects an item.
+                      setState(() {
+                        dropdownEventname = value!;
+                      });
                     },
-                  ),
-                ),
+                    items: neweventnames.map<DropdownMenuItem<String>>((String value) {
+                      return DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      );
+                    }).toList(),
+                  )
               ),
 
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('45 - 49'),
-                    value: is4549selected,
-                    onChanged: (value) {
-                      if (is1544selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
-                        setState(() {
-                          is4549selected = !is4549selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('50 - 54'),
-                    value: is5054selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is1544selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
-                        setState(() {
-                          is5054selected = !is5054selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('55 - 59'),
-                    value: is5559selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is5054selected == false && is1544selected == false && is6064selected == false && is6569selected == false && is70selected == false) {
-                        setState(() {
-                          is5559selected = !is5559selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('60 - 64'),
-                    value: is6064selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is5054selected == false && is5559selected == false && is1544selected == false && is6569selected == false && is70selected == false) {
-                        setState(() {
-                          is6064selected = !is6064selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('65 - 69'),
-                    value: is6569selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is1544selected == false && is70selected == false) {
-                        setState(() {
-                          is6569selected = !is6569selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: EdgeInsets.fromLTRB(leftbound, 0, rightbound, 0),
-                child: StatefulBuilder(
-                  builder: (context, setState) => CheckboxListTile(
-                    title: const Text('70+'),
-                    value: is70selected,
-                    onChanged: (value) {
-                      if (is4549selected == false && is5054selected == false && is5559selected == false && is6064selected == false && is6569selected == false && is1544selected == false) {
-                        setState(() {
-                          is70selected = !is70selected;
-                        });
-                      }
-                    },
-                  ),
-                ),
-              ),
-              */
 
               Padding(
                 padding: EdgeInsets.fromLTRB(leftbound, 50, rightbound, 5),
@@ -327,18 +212,9 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
   }
 
   void _uploadData() {
-    if (inputUrlCtrl.text != '') {
-      urlInput = inputUrlCtrl.text;
-      newUrl = true;
-    }
-    if (inputTokenCtrl.text != '') {
-      tokenInput = inputTokenCtrl.text;
-      newToken = true;
-    }
-    if (eventnameCtrl.text != '') {
-      eventnameInput = inputTokenCtrl.text;
-      newEventname = true;
-    }
+    urlInput = dropdownValueurl;
+    tokenInput = dropdownValuetoken;
+    eventnameInput = dropdownEventname;
 
     pizInput = int.parse(pizCtrl.text);
 
@@ -355,9 +231,5 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
         ).show(context);
       }
     });
-
-    newToken = false;
-    newUrl = false;
-    newEventname = false;
   }
 }

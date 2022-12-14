@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nat_appv2/GlobalVariables.dart';
 import 'package:nat_appv2/block1/firstsentence.dart';
 import 'package:nat_appv2/block2/FirstSentenceBlock2.dart';
 import 'package:nat_appv2/block3/FirstSentenceBlock3.dart';
@@ -6,6 +7,8 @@ import 'package:nat_appv2/block4/FirstSentenceBlock4.dart';
 import 'package:nat_appv2/block5/FirstSentenceBlock5.dart';
 import 'package:nat_appv2/Screens/ResultScreen.dart';
 import 'package:nat_appv2/Screens/HomeScreen.dart';
+import 'package:nat_appv2/Screens/UploadSettingsScreen.dart';
+import 'package:nat_appv2/SharedPreferencesManager.dart';
 
 class NewGameScreen extends StatefulWidget {
   const NewGameScreen({super.key});
@@ -19,7 +22,7 @@ class _NewGameScreenState extends State<NewGameScreen> {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle homescreenButtonstyle = OutlinedButton.styleFrom(backgroundColor: Colors.blueGrey, primary: Colors.white,textStyle: const TextStyle(fontSize: 50), fixedSize: Size(1000, 60));
-    const double buttonheight = 50;
+    const double buttonheight = 30;
 
     return Scaffold(
       appBar: AppBar(
@@ -58,9 +61,13 @@ class _NewGameScreenState extends State<NewGameScreen> {
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _resultsscreen, child: const Text('Ergebnisse')),
 
-            const SizedBox(height: 40),
+            const SizedBox(height: buttonheight),
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _backtohomescreen, child: const Text('Hauptmenü')),
+
+            const SizedBox(height: buttonheight),
+            OutlinedButton(
+                style: homescreenButtonstyle, onPressed: _uploadsettingsscreen, child: const Text('Einstellungen')),
 
           ],
         ),
@@ -160,6 +167,20 @@ class _NewGameScreenState extends State<NewGameScreen> {
               return const Scaffold(
                   body: Center(
                     child: MyHomeScreen(title: 'NAT-Test-Applikation'),
+                  )
+              );
+            }
+        )
+    );
+  }
+
+  void _uploadsettingsscreen() {
+    Navigator.of(context).push(
+        MaterialPageRoute<void>(
+            builder: (context) {
+              return const Scaffold(
+                  body: Center(
+                    child: NewUploadSettingsScreen(),
                   )
               );
             }

@@ -1,5 +1,6 @@
 library nat_appv2.globals;
 
+
 List<bool> resultb1s1 = [true,true,false,false,false,true,true,true];
 List<bool> resultb1s2 = [true,true,false,false,false,false];
 List<bool> resultb1s3 = [true,true,true,true,false,false,false,false];
@@ -126,10 +127,15 @@ List<int> wordorderb5s4 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s5 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s6 = [0,0,0,0,0,0,0,0];
 
+List<String> newurls = <String>[];
+List<String> newurlssaved = <String>[];
+List<String> newtokens = <String>[];
+List<String> newtoknessaved = <String>[];
+List<String> neweventnames = <String>[];
+List<String> neweventnamessaved = <String>[];
+
 bool uploadsuccessfull = false;
-bool newUrl = false;
-bool newToken = false;
-bool newEventname = false;
+
 String urlInput = '';
 String tokenInput = '';
 String eventnameInput = '';

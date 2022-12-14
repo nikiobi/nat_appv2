@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nat_appv2/Screens/NewGameScreen.dart';
 import 'package:nat_appv2/GlobalVariables.dart';
+import 'package:nat_appv2/SharedPreferencesManager.dart';
+import 'package:nat_appv2/Screens/UploadSettingsScreen.dart';
+
 
 class MyHomeScreen extends StatefulWidget {
   const MyHomeScreen({Key? key, required this.title}) : super(key: key);
@@ -32,6 +35,10 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
             OutlinedButton(
                 style: homescreenButtonstyle, onPressed: _newtest, child: const Text('Neuer Test')),
 
+            const SizedBox(height: buttonheight),
+            OutlinedButton(
+                style: homescreenButtonstyle, onPressed: _gotosettings, child: const Text('Einstellungen')),
+
           ],
         ),
       ),
@@ -50,6 +57,11 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
             }
         )
     );
+
+    SharedPreferencesManager().loadFromPrefsUrls('urls');
+    SharedPreferencesManager().loadFromPrefsTokens('tokens');
+    SharedPreferencesManager().loadFromPrefsEventnames('eventnames');
+
     resultb1s1 = [false,false,false,false,false,false,false,false];
     resultb1s2 = [false,false,false,false,false,false,false,false];
     resultb1s3 = [false,false,false,false,false,false,false,false];
@@ -111,6 +123,20 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     wordorderb5s4 = [0,0,0,0,0,0,0,0];
     wordorderb5s5 = [0,0,0,0,0,0,0,0];
     wordorderb5s6 = [0,0,0,0,0,0,0,0];
+  }
+
+  void _gotosettings() {
+    Navigator.of(context).push(
+        MaterialPageRoute<void>(
+            builder: (context) {
+              return const Scaffold(
+                  body: Center(
+                    child: NewUploadSettingsScreen(),
+                  )
+              );
+            }
+        )
+    );
   }
 }
 
