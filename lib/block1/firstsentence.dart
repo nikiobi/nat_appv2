@@ -482,6 +482,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[2] = true;
             placedwordb1s1[2] = 'zieht';
             worddroppedorder.add('zieht');
+            codewordb1s1[2] = '1a';
             break;
           case 'tickling2':
             imagetoimage51 = dasimage;
@@ -489,6 +490,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[2] = false;
             placedwordb1s1[2] = 'das';
             worddroppedorder.add('das');
+            codewordb1s1[2] = '2a';
             break;
           case 'tickling3':
             imagetoimage51 = maedchenimage;
@@ -496,6 +498,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[2] = false;
             placedwordb1s1[2] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb1s1[2] = '2b';
             break;
         }
         break;
@@ -507,6 +510,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[3] = false;
             placedwordb1s1[3] = 'zieht';
             worddroppedorder.add('zieht');
+            codewordb1s1[3] = '1a';
             break;
           case 'tickling2':
             imagetoimage61 = dasimage;
@@ -514,6 +518,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[3] = true;
             placedwordb1s1[3] = 'das';
             worddroppedorder.add('das');
+            codewordb1s1[3] = '2a';
             break;
           case 'tickling3':
             imagetoimage61 = maedchenimage;
@@ -521,6 +526,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[3] = false;
             placedwordb1s1[3] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb1s1[3] = '2b';
             break;
         }
         break;
@@ -532,6 +538,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[4] = false;
             placedwordb1s1[4] = 'zieht';
             worddroppedorder.add('zieht');
+            codewordb1s1[4] = '1a';
             break;
           case 'tickling2':
             imagetoimage71 = dasimage;
@@ -539,6 +546,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[4] = false;
             placedwordb1s1[4] = 'das';
             worddroppedorder.add('das');
+            codewordb1s1[4] = '2a';
             break;
           case 'tickling3':
             imagetoimage71 = maedchenimage;
@@ -546,6 +554,7 @@ class _FirstSentenceSetupState extends State<FirstSentenceSetup> {
             resultb1s1[4] = true;
             placedwordb1s1[4] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb1s1[4] = '2b';
             break;
         }
         break;

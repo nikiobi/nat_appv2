@@ -605,6 +605,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[7] = false;
             placedwordb1s5[7] = 'der';
             worddroppedorder.add('der');
+            codewordb1s5[7] = '5a';
             break;
           case 'tickling2':
             imagetoimage51 = word3;
@@ -612,6 +613,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[7] = false;
             placedwordb1s5[7] = 'die';
             worddroppedorder.add('die');
+            codewordb1s5[7] = '3a';
             break;
           case 'tickling3':
             imagetoimage51 = word4;
@@ -619,6 +621,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[7] = true;
             placedwordb1s5[7] = 'Frau';
             worddroppedorder.add('Frau');
+            codewordb1s5[7] = '3b';
             break;
           case 'tickling4':
             imagetoimage51 = word2;
@@ -626,6 +629,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[7] = false;
             placedwordb1s5[7] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb1s5[7] = '1a';
             break;
         }
         break;
@@ -637,6 +641,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[6] = false;
             placedwordb1s5[6] = 'der';
             worddroppedorder.add('der');
+            codewordb1s5[6] = '5a';
             break;
           case 'tickling2':
             imagetoimage61 = word3;
@@ -644,6 +649,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[6] = true;
             placedwordb1s5[6] = 'die';
             worddroppedorder.add('die');
+            codewordb1s5[6] = '3a';
             break;
           case 'tickling3':
             imagetoimage61 = word4;
@@ -651,6 +657,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[6] = false;
             placedwordb1s5[6] = 'Frau';
             worddroppedorder.add('Frau');
+            codewordb1s5[6] = '3b';
             break;
           case 'tickling4':
             imagetoimage61 = word2;
@@ -658,6 +665,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[6] = false;
             placedwordb1s5[6] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb1s5[6] = '1a';
             break;
         }
         break;
@@ -669,6 +677,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[5] = false;
             placedwordb1s5[5] = 'der';
             worddroppedorder.add('der');
+            codewordb1s5[5] = '5a';
             break;
           case 'tickling2':
             imagetoimage71 = word3;
@@ -676,6 +685,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[5] = false;
             placedwordb1s5[5] = 'die';
             worddroppedorder.add('die');
+            codewordb1s5[5] = '3a';
             break;
           case 'tickling3':
             imagetoimage71 = word4;
@@ -683,6 +693,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[5] = false;
             placedwordb1s5[5] = 'Frau';
             worddroppedorder.add('Frau');
+            codewordb1s5[5] = '3b';
             break;
           case 'tickling4':
             imagetoimage71 = word2;
@@ -690,6 +701,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[5] = true;
             placedwordb1s5[5]= 'rettet';
             worddroppedorder.add('rettet');
+            codewordb1s5[5] = '1a';
             break;
         }
         break;
@@ -701,6 +713,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[4] = true;
             placedwordb1s5[4] = 'der';
             worddroppedorder.add('der');
+            codewordb1s5[4] = '5a';
             break;
           case 'tickling2':
             imagetoimage81 = word3;
@@ -708,6 +721,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'die';
             worddroppedorder.add('die');
+            codewordb1s5[4] = '3a';
             break;
           case 'tickling3':
             imagetoimage81 = word4;
@@ -715,6 +729,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'Frau';
             worddroppedorder.add('Frau');
+            codewordb1s5[4] = '3b';
             break;
           case 'tickling4':
             imagetoimage81 = word2;
@@ -722,6 +737,7 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb1s5[4] = '1a';
             break;
         }
         break;

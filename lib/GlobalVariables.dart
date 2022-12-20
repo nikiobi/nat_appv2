@@ -156,6 +156,37 @@ List<String> placedwordb5s4 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht pl
 List<String> placedwordb5s5 = ['Peter','sah','den','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s6 = ['Die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 
+List<String> codewordb1s1 = ['Der','Junge','','','','','',''];
+List<String> codewordb1s2 = ['Die','Katze','','','','','',''];
+List<String> codewordb1s3 = ['Peter','sah','das','Mädchen','','','',''];
+List<String> codewordb1s4 = ['Wer','','','','','','',''];
+List<String> codewordb1s5 = ['Peter','sah','den','Mann','','','',''];
+List<String> codewordb1s6 = ['Wen','','','','','','',''];
+List<String> codewordb2s1 = ['Die','Frau','','','','','',''];
+List<String> codewordb2s2 = ['Der','Mann','','','','','',''];
+List<String> codewordb2s3 = ['Peter','sah','die','Frau','','','',''];
+List<String> codewordb2s4 = ['Wer','','','','','','',''];
+List<String> codewordb2s5 = ['Peter','sah','den','Jungen','','','',''];
+List<String> codewordb2s6 = ['Wen','','','','','','',''];
+List<String> codewordb3s1 = ['Der','Junge','','','','','',''];
+List<String> codewordb3s2 = ['Wer','','','','','','',''];
+List<String> codewordb3s3 = ['Peter','sah','das','Mädchen','','','',''];
+List<String> codewordb3s4 = ['Das','Mädchen','','','','','',''];
+List<String> codewordb3s5 = ['Wen','','','','','','',''];
+List<String> codewordb3s6 = ['Peter','sah','den','Jungen','','','',''];
+List<String> codewordb4s1 = ['Peter','sah','die','Katze','','','',''];
+List<String> codewordb4s2 = ['Das','Mädchen','','','','','',''];
+List<String> codewordb4s3 = ['Peter','sah','den','Hund','','','',''];
+List<String> codewordb4s4 = ['Wen','','','','','','',''];
+List<String> codewordb4s5 = ['Der','Hund','','','','','',''];
+List<String> codewordb4s6 = ['Wer','','','','','','',''];
+List<String> codewordb5s1 = ['Der','Mann','','','','','',''];
+List<String> codewordb5s2 = ['Wen','','','','','','',''];
+List<String> codewordb5s3 = ['Peter','sah','den','Mann','','','',''];
+List<String> codewordb5s4 = ['Wer','','','','','','',''];
+List<String> codewordb5s5 = ['Peter','sah','den','Mann','','','',''];
+List<String> codewordb5s6 = ['Die','Frau','','','','','',''];
+
 
 List<int> wordorderb1s1 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb1s2 = [0,0,0,0,0,0,0,0];

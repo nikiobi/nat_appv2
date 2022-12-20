@@ -585,6 +585,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[5] = false;
             placedwordb1s2[5] = 'vom';
             worddroppedorder.add('vom');
+            codewordb1s2[5] = '4ab';
             break;
           case 'tickling2':
             imagetoimage51 = hundimage;
@@ -592,6 +593,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[5] = false;
             placedwordb1s2[5] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb1s2[5] = '4c';
             break;
           case 'tickling3':
             imagetoimage51 = wirdimage;
@@ -599,6 +601,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[5] = false;
             placedwordb1s2[5] = 'wird';
             worddroppedorder.add('wird');
+            codewordb1s2[5] = '1b';
             break;
           case 'tickling4':
             imagetoimage51 = gejagtimage;
@@ -606,6 +609,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[5] = true;
             placedwordb1s2[5] = 'gejagt';
             worddroppedorder.add('gejagt');
+            codewordb1s2[5] = '1a';
             break;
         }
         break;
@@ -617,6 +621,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[4] = false;
             placedwordb1s2[4] = 'vom';
             worddroppedorder.add('vom');
+            codewordb1s2[4] = '4ab';
             break;
           case 'tickling2':
             imagetoimage61 = hundimage;
@@ -624,6 +629,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[4] = true;
             placedwordb1s2[4] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb1s2[4] = '4c';
             break;
           case 'tickling3':
             imagetoimage61 = wirdimage;
@@ -631,6 +637,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[4] = false;
             placedwordb1s2[4] = 'wird';
             worddroppedorder.add('wird');
+            codewordb1s2[4] = '1b';
             break;
           case 'tickling4':
             imagetoimage61 = gejagtimage;
@@ -638,6 +645,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[4] = false;
             placedwordb1s2[4] = 'gejagt';
             worddroppedorder.add('gejagt');
+            codewordb1s2[4] = '1a';
             break;
         }
         break;
@@ -649,6 +657,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[3] = true;
             placedwordb1s2[3] = 'vom';
             worddroppedorder.add('vom');
+            codewordb1s2[3] = '4ab';
             break;
           case 'tickling2':
             imagetoimage71 = hundimage;
@@ -656,6 +665,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[3] = false;
             placedwordb1s2[3] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb1s2[3] = '4c';
             break;
           case 'tickling3':
             imagetoimage71 = wirdimage;
@@ -663,6 +673,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[3] = false;
             placedwordb1s2[3] = 'wird';
             worddroppedorder.add('wird');
+            codewordb1s2[3] = '1b';
             break;
           case 'tickling4':
             imagetoimage71 = gejagtimage;
@@ -670,6 +681,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[3] = false;
             placedwordb1s2[3] = 'gejagt';
             worddroppedorder.add('gejagt');
+            codewordb1s2[3] = '1a';
             break;
         }
         break;
@@ -681,6 +693,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[2] = false;
             placedwordb1s2[2] = 'vom';
             worddroppedorder.add('vom');
+            codewordb1s2[2] = '4ab';
             break;
           case 'tickling2':
             imagetoimage81 = hundimage;
@@ -688,6 +701,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[2] = false;
             placedwordb1s2[2] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb1s2[2] = '1b';
             break;
           case 'tickling3':
             imagetoimage81 = wirdimage;
@@ -695,6 +709,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[2] = true;
             placedwordb1s2[2] = 'wird';
             worddroppedorder.add('wird');
+            codewordb1s2[2] = '1b';
             break;
           case 'tickling4':
             imagetoimage81 = gejagtimage;
@@ -702,6 +717,7 @@ class _SecondSentenceSetupState extends State<SecondSentenceSetup> {
             resultb1s2[2] = false;
             placedwordb1s2[2] = 'gejagt';
             worddroppedorder.add('gejagt');
+            codewordb1s2[2] = '1a';
             break;
         }
         break;
