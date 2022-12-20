@@ -40,7 +40,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 1'),),),
+                            'Wort1'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -48,7 +48,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 2'),),),
+                            'Wort2'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -56,7 +56,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 3'),),),
+                            'Wort3'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -64,7 +64,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 4'),),),
+                            'Wort4'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -72,7 +72,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 5'),),),
+                            'Wort5'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -80,7 +80,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 6'),),),
+                            'Wort6'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -88,7 +88,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 7'),),),
+                            'Wort7'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -96,11 +96,15 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 8'),),),
+                            'Wort8'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
                             ''),),),
+                    DataColumn(
+                      label: Expanded(
+                        child: Text(
+                            'Resets'),),),
                   ],
                   rows: <DataRow>[
                     DataRow(cells: <DataCell>[
@@ -109,11 +113,11 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb1s1[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s1[2]+' -- '+wordorderb1s1[2].toString())),
+                      DataCell(Text(placedwordb1s1[2])),
                       DataCell(englishtogerman(resultb1s1[2])),
-                      DataCell(Text(placedwordb1s1[3]+' -- '+wordorderb1s1[3].toString())),
+                      DataCell(Text(placedwordb1s1[3])),
                       DataCell(englishtogerman(resultb1s1[3])),
-                      DataCell(Text(placedwordb1s1[4]+' -- '+wordorderb1s1[4].toString())),
+                      DataCell(Text(placedwordb1s1[4])),
                       DataCell(englishtogerman(resultb1s1[4])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -121,6 +125,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss1b1w/$resetss1b1s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -129,18 +135,20 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb1s2[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s2[2]+' -- '+wordorderb1s2[2].toString())),
+                      DataCell(Text(placedwordb1s2[2])),
                       DataCell(englishtogerman(resultb1s2[2])),
-                      DataCell(Text(placedwordb1s2[3]+' -- '+wordorderb1s2[3].toString())),
+                      DataCell(Text(placedwordb1s2[3])),
                       DataCell(englishtogerman(resultb1s2[3])),
-                      DataCell(Text(placedwordb1s2[4]+' -- '+wordorderb1s2[4].toString())),
+                      DataCell(Text(placedwordb1s2[4])),
                       DataCell(englishtogerman(resultb1s2[4])),
-                      DataCell(Text(placedwordb1s2[5]+' -- '+wordorderb1s2[5].toString())),
+                      DataCell(Text(placedwordb1s2[5])),
                       DataCell(englishtogerman(resultb1s2[5])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss2b1w/$resetss2b1s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -153,25 +161,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb1s3[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s3[4]+' -- '+wordorderb1s3[4].toString())),
+                      DataCell(Text(placedwordb1s3[4])),
                       DataCell(englishtogerman(resultb1s3[4])),
-                      DataCell(Text(placedwordb1s3[5]+' -- '+wordorderb1s3[5].toString())),
+                      DataCell(Text(placedwordb1s3[5])),
                       DataCell(englishtogerman(resultb1s3[5])),
-                      DataCell(Text(placedwordb1s3[6]+' -- '+wordorderb1s3[6].toString())),
+                      DataCell(Text(placedwordb1s3[6])),
                       DataCell(englishtogerman(resultb1s3[6])),
-                      DataCell(Text(placedwordb1s3[7]+' -- '+wordorderb1s3[7].toString())),
+                      DataCell(Text(placedwordb1s3[7])),
                       DataCell(englishtogerman(resultb1s3[7])),
+
+                      DataCell(Text('$resetss3b1w/$resetss3b1s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 4')),
                       DataCell(Text(placedwordb1s4[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s4[1]+' -- '+wordorderb1s4[1].toString())),
+                      DataCell(Text(placedwordb1s4[1])),
                       DataCell(englishtogerman(resultb1s4[1])),
-                      DataCell(Text(placedwordb1s4[2]+' -- '+wordorderb1s4[2].toString())),
+                      DataCell(Text(placedwordb1s4[2])),
                       DataCell(englishtogerman(resultb1s4[2])),
-                      DataCell(Text(placedwordb1s4[3]+' -- '+wordorderb1s4[3].toString())),
+                      DataCell(Text(placedwordb1s4[3])),
                       DataCell(englishtogerman(resultb1s4[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -181,6 +191,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss4b1w/$resetss4b1s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -193,25 +205,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb1s5[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s5[1]+' -- '+wordorderb1s5[4].toString())),
+                      DataCell(Text(placedwordb1s5[1])),
                       DataCell(englishtogerman(resultb1s5[4])),
-                      DataCell(Text(placedwordb1s5[5]+' -- '+wordorderb1s5[5].toString())),
+                      DataCell(Text(placedwordb1s5[5])),
                       DataCell(englishtogerman(resultb1s5[5])),
-                      DataCell(Text(placedwordb1s5[6]+' -- '+wordorderb1s5[6].toString())),
+                      DataCell(Text(placedwordb1s5[6])),
                       DataCell(englishtogerman(resultb1s5[6])),
-                      DataCell(Text(placedwordb1s5[7]+' -- '+wordorderb1s5[7].toString())),
+                      DataCell(Text(placedwordb1s5[7])),
                       DataCell(englishtogerman(resultb1s5[7])),
+
+                      DataCell(Text('$resetss5b1w/$resetss5b1s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 6')),
                       DataCell(Text(placedwordb1s6[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb1s6[1]+' -- '+wordorderb1s6[1].toString())),
+                      DataCell(Text(placedwordb1s6[1])),
                       DataCell(englishtogerman(resultb1s6[1])),
-                      DataCell(Text(placedwordb1s6[2]+' -- '+wordorderb1s6[2].toString())),
+                      DataCell(Text(placedwordb1s6[2])),
                       DataCell(englishtogerman(resultb1s6[2])),
-                      DataCell(Text(placedwordb1s6[3]+' -- '+wordorderb1s6[3].toString())),
+                      DataCell(Text(placedwordb1s6[3])),
                       DataCell(englishtogerman(resultb1s6[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -221,6 +235,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss6b1w/$resetss6b1s')),
                     ]),
                   ],
                 ),
@@ -236,7 +252,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 1'),),),
+                            'Wort1'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -244,7 +260,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 2'),),),
+                            'Wort2'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -252,7 +268,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 3'),),),
+                            'Wort3'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -260,7 +276,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 4'),),),
+                            'Wort4'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -268,7 +284,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 5'),),),
+                            'Wort5'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -276,7 +292,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 6'),),),
+                            'Wort6'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -284,7 +300,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 7'),),),
+                            'Wort7'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -292,11 +308,15 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 8'),),),
+                            'Wort8'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
                             ''),),),
+                    DataColumn(
+                      label: Expanded(
+                        child: Text(
+                            'Resets'),),),
                   ],
                   rows: <DataRow>[
                     DataRow(cells: <DataCell>[
@@ -305,18 +325,20 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb2s1[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s1[2]+' -- '+wordorderb2s1[2].toString())),
+                      DataCell(Text(placedwordb2s1[2])),
                       DataCell(englishtogerman(resultb2s1[2])),
-                      DataCell(Text(placedwordb2s1[3]+' -- '+wordorderb2s1[3].toString())),
+                      DataCell(Text(placedwordb2s1[3])),
                       DataCell(englishtogerman(resultb2s1[3])),
-                      DataCell(Text(placedwordb2s1[4]+' -- '+wordorderb2s1[4].toString())),
+                      DataCell(Text(placedwordb2s1[4])),
                       DataCell(englishtogerman(resultb2s1[4])),
-                      DataCell(Text(placedwordb2s1[5]+' -- '+wordorderb2s1[5].toString())),
+                      DataCell(Text(placedwordb2s1[5])),
                       DataCell(englishtogerman(resultb2s1[5])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss1b2w/$resetss1b2s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -325,11 +347,11 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb2s2[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s2[2]+' -- '+wordorderb2s2[2].toString())),
+                      DataCell(Text(placedwordb2s2[2])),
                       DataCell(englishtogerman(resultb2s2[2])),
-                      DataCell(Text(placedwordb2s2[3]+' -- '+wordorderb2s2[3].toString())),
+                      DataCell(Text(placedwordb2s2[3])),
                       DataCell(englishtogerman(resultb2s2[3])),
-                      DataCell(Text(placedwordb2s2[4]+' -- '+wordorderb2s2[4].toString())),
+                      DataCell(Text(placedwordb2s2[4])),
                       DataCell(englishtogerman(resultb2s2[4])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -337,6 +359,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss2b2w/$resetss2b2s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -349,25 +373,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb2s3[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s3[4]+' -- '+wordorderb2s3[4].toString())),
+                      DataCell(Text(placedwordb2s3[4])),
                       DataCell(englishtogerman(resultb2s3[4])),
-                      DataCell(Text(placedwordb2s3[5]+' -- '+wordorderb2s3[5].toString())),
+                      DataCell(Text(placedwordb2s3[5])),
                       DataCell(englishtogerman(resultb2s3[5])),
-                      DataCell(Text(placedwordb2s3[6]+' -- '+wordorderb2s3[6].toString())),
+                      DataCell(Text(placedwordb2s3[6])),
                       DataCell(englishtogerman(resultb2s3[6])),
-                      DataCell(Text(placedwordb2s3[7]+' -- '+wordorderb2s3[7].toString())),
+                      DataCell(Text(placedwordb2s3[7])),
                       DataCell(englishtogerman(resultb2s3[7])),
+
+                      DataCell(Text('$resetss3b2w/$resetss3b2s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 4')),
                       DataCell(Text(placedwordb2s4[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s4[1]+' -- '+wordorderb2s4[1].toString())),
+                      DataCell(Text(placedwordb2s4[1])),
                       DataCell(englishtogerman(resultb2s4[1])),
-                      DataCell(Text(placedwordb2s4[2]+' -- '+wordorderb2s4[2].toString())),
+                      DataCell(Text(placedwordb2s4[2])),
                       DataCell(englishtogerman(resultb2s4[2])),
-                      DataCell(Text(placedwordb2s4[3]+' -- '+wordorderb2s4[3].toString())),
+                      DataCell(Text(placedwordb2s4[3])),
                       DataCell(englishtogerman(resultb2s4[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -377,6 +403,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss4b2w/$resetss4b2s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -389,25 +417,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb2s5[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s5[4]+' -- '+wordorderb2s5[4].toString())),
+                      DataCell(Text(placedwordb2s5[4])),
                       DataCell(englishtogerman(resultb2s5[4])),
-                      DataCell(Text(placedwordb2s5[5]+' -- '+wordorderb2s5[5].toString())),
+                      DataCell(Text(placedwordb2s5[5])),
                       DataCell(englishtogerman(resultb2s5[5])),
-                      DataCell(Text(placedwordb2s5[6]+' -- '+wordorderb2s5[6].toString())),
+                      DataCell(Text(placedwordb2s5[6])),
                       DataCell(englishtogerman(resultb2s5[6])),
-                      DataCell(Text(placedwordb2s5[7]+' -- '+wordorderb2s5[7].toString())),
+                      DataCell(Text(placedwordb2s5[7])),
                       DataCell(englishtogerman(resultb2s5[7])),
+
+                      DataCell(Text('$resetss5b2w/$resetss5b2s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 6')),
                       DataCell(Text(placedwordb2s6[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb2s6[1]+' -- '+wordorderb2s6[1].toString())),
+                      DataCell(Text(placedwordb2s6[1])),
                       DataCell(englishtogerman(resultb2s6[1])),
-                      DataCell(Text(placedwordb2s6[2]+' -- '+wordorderb2s6[2].toString())),
+                      DataCell(Text(placedwordb2s6[2])),
                       DataCell(englishtogerman(resultb2s6[2])),
-                      DataCell(Text(placedwordb2s6[3]+' -- '+wordorderb2s6[3].toString())),
+                      DataCell(Text(placedwordb2s6[3])),
                       DataCell(englishtogerman(resultb2s6[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -417,6 +447,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss6b2w/$resetss6b2s')),
                     ]),
                   ],
                 ),
@@ -432,7 +464,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 1'),),),
+                            'Wort1'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -440,7 +472,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 2'),),),
+                            'Wort2'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -448,7 +480,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 3'),),),
+                            'Wort3'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -456,7 +488,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 4'),),),
+                            'Wort4'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -464,7 +496,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 5'),),),
+                            'Wort5'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -472,7 +504,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 6'),),),
+                            'Wort6'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -480,7 +512,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 7'),),),
+                            'Wort7'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -488,11 +520,15 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 8'),),),
+                            'Wort8'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
                             ''),),),
+                    DataColumn(
+                      label: Expanded(
+                        child: Text(
+                            'Resets'),),),
                   ],
                   rows: <DataRow>[
                     DataRow(cells: <DataCell>[
@@ -501,11 +537,11 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb3s1[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s1[2]+' -- '+wordorderb3s1[2].toString())),
+                      DataCell(Text(placedwordb3s1[2])),
                       DataCell(englishtogerman(resultb3s1[2])),
-                      DataCell(Text(placedwordb3s1[3]+' -- '+wordorderb3s1[3].toString())),
+                      DataCell(Text(placedwordb3s1[3])),
                       DataCell(englishtogerman(resultb3s1[3])),
-                      DataCell(Text(placedwordb3s1[4]+' -- '+wordorderb3s1[4].toString())),
+                      DataCell(Text(placedwordb3s1[4])),
                       DataCell(englishtogerman(resultb3s1[4])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -513,17 +549,19 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss1b3w/$resetss1b3s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 2')),
                       DataCell(Text(placedwordb3s2[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s2[1]+' -- '+wordorderb3s2[1].toString())),
+                      DataCell(Text(placedwordb3s2[1])),
                       DataCell(englishtogerman(resultb3s2[1])),
-                      DataCell(Text(placedwordb3s2[2]+' -- '+wordorderb3s2[2].toString())),
+                      DataCell(Text(placedwordb3s2[2])),
                       DataCell(englishtogerman(resultb3s2[2])),
-                      DataCell(Text(placedwordb3s2[3]+' -- '+wordorderb3s2[3].toString())),
+                      DataCell(Text(placedwordb3s2[3])),
                       DataCell(englishtogerman(resultb3s2[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -533,6 +571,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss2b3w/$resetss2b3s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -545,14 +585,16 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb3s3[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s3[4]+' -- '+wordorderb3s3[4].toString())),
+                      DataCell(Text(placedwordb3s3[4])),
                       DataCell(englishtogerman(resultb3s3[4])),
-                      DataCell(Text(placedwordb3s3[5]+' -- '+wordorderb3s3[5].toString())),
+                      DataCell(Text(placedwordb3s3[5])),
                       DataCell(englishtogerman(resultb3s3[5])),
-                      DataCell(Text(placedwordb3s3[6]+' -- '+wordorderb3s3[6].toString())),
+                      DataCell(Text(placedwordb3s3[6])),
                       DataCell(englishtogerman(resultb3s3[6])),
-                      DataCell(Text(placedwordb3s3[7]+' -- '+wordorderb3s3[7].toString())),
+                      DataCell(Text(placedwordb3s3[7])),
                       DataCell(englishtogerman(resultb3s3[7])),
+
+                      DataCell(Text('$resetss3b3w/$resetss3b3s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -561,29 +603,31 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb3s4[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s4[2]+' -- '+wordorderb3s4[2].toString())),
+                      DataCell(Text(placedwordb3s4[2])),
                       DataCell(englishtogerman(resultb3s4[2])),
-                      DataCell(Text(placedwordb3s4[3]+' -- '+wordorderb3s4[3].toString())),
+                      DataCell(Text(placedwordb3s4[3])),
                       DataCell(englishtogerman(resultb3s4[3])),
-                      DataCell(Text(placedwordb3s4[4]+' -- '+wordorderb3s4[4].toString())),
+                      DataCell(Text(placedwordb3s4[4])),
                       DataCell(englishtogerman(resultb3s4[4])),
-                      DataCell(Text(placedwordb3s4[5]+' -- '+wordorderb3s4[5].toString())),
+                      DataCell(Text(placedwordb3s4[5])),
                       DataCell(englishtogerman(resultb3s4[5])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss4b3w/$resetss4b3s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 5')),
                       DataCell(Text(placedwordb3s5[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s5[1]+' -- '+wordorderb3s5[1].toString())),
+                      DataCell(Text(placedwordb3s5[1])),
                       DataCell(englishtogerman(resultb3s5[1])),
-                      DataCell(Text(placedwordb3s5[2]+' -- '+wordorderb3s5[2].toString())),
+                      DataCell(Text(placedwordb3s5[2])),
                       DataCell(englishtogerman(resultb3s5[2])),
-                      DataCell(Text(placedwordb3s5[3]+' -- '+wordorderb3s5[3].toString())),
+                      DataCell(Text(placedwordb3s5[3])),
                       DataCell(englishtogerman(resultb3s5[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -593,6 +637,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss5b3w/$resetss5b3s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -605,14 +651,16 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb3s6[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb3s6[4]+' -- '+wordorderb3s6[4].toString())),
+                      DataCell(Text(placedwordb3s6[4])),
                       DataCell(englishtogerman(resultb3s6[4])),
-                      DataCell(Text(placedwordb3s6[5]+' -- '+wordorderb3s6[5].toString())),
+                      DataCell(Text(placedwordb3s6[5])),
                       DataCell(englishtogerman(resultb3s6[5])),
-                      DataCell(Text(placedwordb3s6[6]+' -- '+wordorderb3s6[6].toString())),
+                      DataCell(Text(placedwordb3s6[6])),
                       DataCell(englishtogerman(resultb3s6[6])),
-                      DataCell(Text(placedwordb3s6[7]+' -- '+wordorderb3s6[7].toString())),
+                      DataCell(Text(placedwordb3s6[7])),
                       DataCell(englishtogerman(resultb3s6[7])),
+
+                      DataCell(Text('$resetss6b3w/$resetss6b3s')),
                     ]),
                   ],
                 ),
@@ -628,7 +676,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 1'),),),
+                            'Wort1'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -636,7 +684,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 2'),),),
+                            'Wort2'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -644,7 +692,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 3'),),),
+                            'Wort3'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -652,7 +700,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 4'),),),
+                            'Wort4'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -660,7 +708,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 5'),),),
+                            'Wort5'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -668,7 +716,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 6'),),),
+                            'Wort6'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -676,7 +724,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 7'),),),
+                            'Wort7'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -684,11 +732,15 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 8'),),),
+                            'Wort8'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
                             ''),),),
+                    DataColumn(
+                      label: Expanded(
+                        child: Text(
+                            'Resets'),),),
                   ],
                   rows: <DataRow>[
                     DataRow(cells: <DataCell>[
@@ -701,14 +753,16 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb4s1[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s1[4]+' -- '+wordorderb4s1[4].toString())),
+                      DataCell(Text(placedwordb4s1[4])),
                       DataCell(englishtogerman(resultb4s1[4])),
-                      DataCell(Text(placedwordb4s1[5]+' -- '+wordorderb4s1[5].toString())),
+                      DataCell(Text(placedwordb4s1[5])),
                       DataCell(englishtogerman(resultb4s1[5])),
-                      DataCell(Text(placedwordb4s1[6]+' -- '+wordorderb4s1[6].toString())),
+                      DataCell(Text(placedwordb4s1[6])),
                       DataCell(englishtogerman(resultb4s1[6])),
-                      DataCell(Text(placedwordb4s1[7]+' -- '+wordorderb4s1[7].toString())),
+                      DataCell(Text(placedwordb4s1[7])),
                       DataCell(englishtogerman(resultb4s1[7])),
+
+                      DataCell(Text('$resetss1b4w/$resetss1b4s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -717,18 +771,20 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb4s2[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s2[2]+' -- '+wordorderb4s2[2].toString())),
+                      DataCell(Text(placedwordb4s2[2])),
                       DataCell(englishtogerman(resultb4s2[2])),
-                      DataCell(Text(placedwordb4s2[3]+' -- '+wordorderb4s2[3].toString())),
+                      DataCell(Text(placedwordb4s2[3])),
                       DataCell(englishtogerman(resultb4s2[3])),
-                      DataCell(Text(placedwordb4s2[4]+' -- '+wordorderb4s2[4].toString())),
+                      DataCell(Text(placedwordb4s2[4])),
                       DataCell(englishtogerman(resultb4s2[4])),
-                      DataCell(Text(placedwordb4s2[5]+' -- '+wordorderb4s2[5].toString())),
+                      DataCell(Text(placedwordb4s2[5])),
                       DataCell(englishtogerman(resultb4s2[5])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss2b4w/$resetss2b4s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -741,25 +797,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb4s3[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s3[4]+' -- '+wordorderb4s3[4].toString())),
+                      DataCell(Text(placedwordb4s3[4])),
                       DataCell(englishtogerman(resultb4s3[4])),
-                      DataCell(Text(placedwordb4s3[5]+' -- '+wordorderb4s3[5].toString())),
+                      DataCell(Text(placedwordb4s3[5])),
                       DataCell(englishtogerman(resultb4s3[5])),
-                      DataCell(Text(placedwordb4s3[6]+' -- '+wordorderb4s3[6].toString())),
+                      DataCell(Text(placedwordb4s3[6])),
                       DataCell(englishtogerman(resultb4s3[6])),
-                      DataCell(Text(placedwordb4s3[7]+' -- '+wordorderb4s3[7].toString())),
+                      DataCell(Text(placedwordb4s3[7])),
                       DataCell(englishtogerman(resultb4s3[7])),
+
+                      DataCell(Text('$resetss3b4w/$resetss3b4s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 4')),
                       DataCell(Text(placedwordb4s4[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s4[1]+' -- '+wordorderb4s4[1].toString())),
+                      DataCell(Text(placedwordb4s4[1])),
                       DataCell(englishtogerman(resultb4s4[1])),
-                      DataCell(Text(placedwordb4s4[2]+' -- '+wordorderb4s4[2].toString())),
+                      DataCell(Text(placedwordb4s4[2])),
                       DataCell(englishtogerman(resultb4s4[2])),
-                      DataCell(Text(placedwordb4s4[3]+' -- '+wordorderb4s4[3].toString())),
+                      DataCell(Text(placedwordb4s4[3])),
                       DataCell(englishtogerman(resultb4s4[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -769,6 +827,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss4b4w/$resetss4b4s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -777,11 +837,11 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb4s5[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s5[2]+' -- '+wordorderb4s5[2].toString())),
+                      DataCell(Text(placedwordb4s5[2])),
                       DataCell(englishtogerman(resultb4s5[2])),
-                      DataCell(Text(placedwordb4s5[3]+' -- '+wordorderb4s5[3].toString())),
+                      DataCell(Text(placedwordb4s5[3])),
                       DataCell(englishtogerman(resultb4s5[3])),
-                      DataCell(Text(placedwordb4s5[4]+' -- '+wordorderb4s5[4].toString())),
+                      DataCell(Text(placedwordb4s5[4])),
                       DataCell(englishtogerman(resultb4s5[4])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -789,17 +849,19 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss5b4w/$resetss5b4s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 6')),
                       DataCell(Text(placedwordb4s6[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb4s6[1]+' -- '+wordorderb4s6[1].toString())),
+                      DataCell(Text(placedwordb4s6[1])),
                       DataCell(englishtogerman(resultb4s6[1])),
-                      DataCell(Text(placedwordb4s6[2]+' -- '+wordorderb4s6[2].toString())),
+                      DataCell(Text(placedwordb4s6[2])),
                       DataCell(englishtogerman(resultb4s6[2])),
-                      DataCell(Text(placedwordb4s6[3]+' -- '+wordorderb4s6[3].toString())),
+                      DataCell(Text(placedwordb4s6[3])),
                       DataCell(englishtogerman(resultb4s6[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -809,6 +871,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss6b4w/$resetss6b4s')),
                     ]),
                   ],
                 ),
@@ -824,7 +888,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 1'),),),
+                            'Wort1'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -832,7 +896,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 2'),),),
+                            'Wort2'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -840,7 +904,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 3'),),),
+                            'Wort3'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -848,7 +912,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 4'),),),
+                            'Wort4'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -856,7 +920,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 5'),),),
+                            'Wort5'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -864,7 +928,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 6'),),),
+                            'Wort6'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -872,7 +936,7 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 7'),),),
+                            'Wort7'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
@@ -880,11 +944,15 @@ class _NewResultScreenState extends State<NewResultScreen> {
                     DataColumn(
                       label: Expanded(
                         child: Text(
-                            'Wort 8'),),),
+                            'Wort8'),),),
                     DataColumn(
                       label: Expanded(
                         child: Text(
                             ''),),),
+                    DataColumn(
+                      label: Expanded(
+                        child: Text(
+                            'Resets'),),),
                   ],
                   rows: <DataRow>[
                     DataRow(cells: <DataCell>[
@@ -893,11 +961,11 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb5s1[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s1[2]+' -- '+wordorderb5s1[2].toString())),
+                      DataCell(Text(placedwordb5s1[2])),
                       DataCell(englishtogerman(resultb5s1[2])),
-                      DataCell(Text(placedwordb5s1[3]+' -- '+wordorderb5s1[3].toString())),
+                      DataCell(Text(placedwordb5s1[3])),
                       DataCell(englishtogerman(resultb5s1[3])),
-                      DataCell(Text(placedwordb5s1[4]+' -- '+wordorderb5s1[4].toString())),
+                      DataCell(Text(placedwordb5s1[4])),
                       DataCell(englishtogerman(resultb5s1[4])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -905,17 +973,19 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss1b5w/$resetss1b5s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 2')),
                       DataCell(Text(placedwordb5s2[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s2[1]+' -- '+wordorderb5s2[1].toString())),
+                      DataCell(Text(placedwordb5s2[1])),
                       DataCell(englishtogerman(resultb5s2[1])),
-                      DataCell(Text(placedwordb5s2[2]+' -- '+wordorderb5s2[2].toString())),
+                      DataCell(Text(placedwordb5s2[2])),
                       DataCell(englishtogerman(resultb5s2[2])),
-                      DataCell(Text(placedwordb5s2[3]+' -- '+wordorderb5s2[3].toString())),
+                      DataCell(Text(placedwordb5s2[3])),
                       DataCell(englishtogerman(resultb5s2[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -925,6 +995,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss2b5w/$resetss2b5s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -937,25 +1009,27 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb5s3[3])),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s3[4]+' -- '+wordorderb5s3[4].toString())),
+                      DataCell(Text(placedwordb5s3[4])),
                       DataCell(englishtogerman(resultb5s3[4])),
-                      DataCell(Text(placedwordb5s3[5]+' -- '+wordorderb5s3[5].toString())),
+                      DataCell(Text(placedwordb5s3[5])),
                       DataCell(englishtogerman(resultb5s3[5])),
-                      DataCell(Text(placedwordb5s3[6]+' -- '+wordorderb5s3[6].toString())),
+                      DataCell(Text(placedwordb5s3[6])),
                       DataCell(englishtogerman(resultb5s3[6])),
-                      DataCell(Text(placedwordb5s3[7]+' -- '+wordorderb5s3[7].toString())),
+                      DataCell(Text(placedwordb5s3[7])),
                       DataCell(englishtogerman(resultb5s3[7])),
+
+                      DataCell(Text('$resetss3b5w/$resetss3b5s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
                       const DataCell(Text('Satz 4')),
                       DataCell(Text(placedwordb5s4[0], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s4[1]+' -- '+wordorderb5s4[1].toString())),
+                      DataCell(Text(placedwordb5s4[1])),
                       DataCell(englishtogerman(resultb5s4[1])),
-                      DataCell(Text(placedwordb5s4[2]+' -- '+wordorderb5s4[2].toString())),
+                      DataCell(Text(placedwordb5s4[2])),
                       DataCell(englishtogerman(resultb5s4[2])),
-                      DataCell(Text(placedwordb5s4[3]+' -- '+wordorderb5s4[3].toString())),
+                      DataCell(Text(placedwordb5s4[3])),
                       DataCell(englishtogerman(resultb5s4[3])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
@@ -965,6 +1039,8 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss4b5w/$resetss4b5s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -977,14 +1053,16 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb5s5[3], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s5[4]+' -- '+wordorderb5s5[4].toString())),
+                      DataCell(Text(placedwordb5s5[4])),
                       DataCell(englishtogerman(resultb5s5[4])),
-                      DataCell(Text(placedwordb5s5[5]+' -- '+wordorderb5s5[5].toString())),
+                      DataCell(Text(placedwordb5s5[5])),
                       DataCell(englishtogerman(resultb5s5[5])),
-                      DataCell(Text(placedwordb5s5[6]+' -- '+wordorderb5s5[6].toString())),
+                      DataCell(Text(placedwordb5s5[6])),
                       DataCell(englishtogerman(resultb5s5[6])),
-                      DataCell(Text(placedwordb5s5[7]+' -- '+wordorderb5s5[7].toString())),
+                      DataCell(Text(placedwordb5s5[7])),
                       DataCell(englishtogerman(resultb5s5[7])),
+
+                      DataCell(Text('$resetss5b5w/$resetss5b5s')),
                     ]),
 
                     DataRow(cells: <DataCell>[
@@ -993,18 +1071,20 @@ class _NewResultScreenState extends State<NewResultScreen> {
                       DataCell(Text('')),
                       DataCell(Text(placedwordb5s6[1], textScaleFactor: 1.5, style: TextStyle(fontWeight: FontWeight.bold))),
                       DataCell(Text('|', textScaleFactor: 3)),
-                      DataCell(Text(placedwordb5s6[2]+' -- '+wordorderb5s6[2].toString())),
+                      DataCell(Text(placedwordb5s6[2])),
                       DataCell(englishtogerman(resultb5s6[2])),
-                      DataCell(Text(placedwordb5s6[3]+' -- '+wordorderb5s6[3].toString())),
+                      DataCell(Text(placedwordb5s6[3])),
                       DataCell(englishtogerman(resultb5s6[3])),
-                      DataCell(Text(placedwordb5s6[4]+' -- '+wordorderb5s6[4].toString())),
+                      DataCell(Text(placedwordb5s6[4])),
                       DataCell(englishtogerman(resultb5s6[4])),
-                      DataCell(Text(placedwordb5s6[5]+' -- '+wordorderb5s6[5].toString())),
+                      DataCell(Text(placedwordb5s6[5])),
                       DataCell(englishtogerman(resultb5s6[5])),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
                       DataCell(Text('-')),
+
+                      DataCell(Text('$resetss6b5w/$resetss6b5s')),
                     ]),
                   ],
                 ),

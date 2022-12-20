@@ -755,6 +755,7 @@ class _ThirdSentenceBlock2State extends State<ThirdSentenceBlock2> {
       imagetoimage82 = SizedBox();
 
       wordorderb2s3 = [0,0,0,0,0,0,0,0];
+      resetss3b2s += 1;
     });
   }
 
@@ -951,6 +952,7 @@ class _ThirdSentenceBlock2State extends State<ThirdSentenceBlock2> {
       _DetermineLast(lastimagedropped.last);
       lastimagedropped.remove(lastimagedropped.last);
       worddroppedorder.remove(worddroppedorder.last);
+      resetss3b2w += 1;
     }
   }
 }

@@ -753,6 +753,7 @@ class _FifthSentenceBlock2State extends State<FifthSentenceBlock2> {
       imagetoimage82 = SizedBox();
 
       wordorderb2s5 = [0,0,0,0,0,0,0,0];
+      resetss5b2s += 1;
     });
   }
 
@@ -949,6 +950,7 @@ class _FifthSentenceBlock2State extends State<FifthSentenceBlock2> {
       _DetermineLast(lastimagedropped.last);
       lastimagedropped.remove(lastimagedropped.last);
       worddroppedorder.remove(worddroppedorder.last);
+      resetss5b2w += 1;
     }
   }
 }
