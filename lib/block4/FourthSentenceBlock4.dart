@@ -479,6 +479,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[3] = false;
             placedwordb4s4[3] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s4[3] = '1a';
             break;
           case 'tickling2':
             imagetoimage51 = word2;
@@ -486,6 +487,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[3] = false;
             placedwordb4s4[3] = 'der';
             worddroppedorder.add('der');
+            codewordb4s4[3] = '2a';
             break;
           case 'tickling3':
             imagetoimage51 = word3;
@@ -493,6 +495,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[3] = true;
             placedwordb4s4[3] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb4s4[3] = '2b';
             break;
         }
         break;
@@ -504,6 +507,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[2] = false;
             placedwordb4s4[2] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s4[2] = '1a';
             break;
           case 'tickling2':
             imagetoimage61 = word2;
@@ -511,6 +515,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[2] = true;
             placedwordb4s4[2] = 'der';
             worddroppedorder.add('der');
+            codewordb4s4[2] = '2a';
             break;
           case 'tickling3':
             imagetoimage61 = word3;
@@ -518,6 +523,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[2] = false;
             placedwordb4s4[2] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb4s4[2] = '2b';
             break;
         }
         break;
@@ -529,6 +535,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[1] = true;
             placedwordb4s4[1] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s4[1] = '1a';
             break;
           case 'tickling2':
             imagetoimage71 = word2;
@@ -536,6 +543,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[1] = false;
             placedwordb4s4[1] = 'der';
             worddroppedorder.add('der');
+            codewordb4s4[1] = '2a';
             break;
           case 'tickling3':
             imagetoimage71 = word3;
@@ -543,6 +551,7 @@ class _FourthSentenceBlock4State extends State<FourthSentenceBlock4> {
             resultb4s4[1] = false;
             placedwordb4s4[1] = 'Hund';
             worddroppedorder.add('Hund');
+            codewordb4s4[1] = '2b';
             break;
         }
         break;

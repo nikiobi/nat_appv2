@@ -478,6 +478,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[3] = false;
             placedwordb5s2[3] = 'küsst';
             worddroppedorder.add('küsst');
+            codewordb5s2[3] = '1a';
             break;
           case 'tickling2':
             imagetoimage51 = word2;
@@ -485,6 +486,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[3] = false;
             placedwordb5s2[3] = 'der';
             worddroppedorder.add('der');
+            codewordb5s2[3] = '2a';
             break;
           case 'tickling3':
             imagetoimage51 = word3;
@@ -492,6 +494,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[3] = true;
             placedwordb5s2[3] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s2[3] = '2b';
             break;
         }
         break;
@@ -503,6 +506,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[2] = false;
             placedwordb5s2[2] = 'küsst';
             worddroppedorder.add('küsst');
+            codewordb5s2[2] = '1a';
             break;
           case 'tickling2':
             imagetoimage61 = word2;
@@ -510,6 +514,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[2] = true;
             placedwordb5s2[2] = 'der';
             worddroppedorder.add('der');
+            codewordb5s2[2] = '2a';
             break;
           case 'tickling3':
             imagetoimage61 = word3;
@@ -517,6 +522,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[2] = false;
             placedwordb5s2[2] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s2[2] = '2b';
             break;
         }
         break;
@@ -528,6 +534,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[1] = true;
             placedwordb5s2[1] = 'küsst';
             worddroppedorder.add('küsst');
+            codewordb5s2[1] = '1a';
             break;
           case 'tickling2':
             imagetoimage71 = word2;
@@ -535,6 +542,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[1] = false;
             placedwordb5s2[1] = 'der';
             worddroppedorder.add('der');
+            codewordb5s2[1] = '2a';
             break;
           case 'tickling3':
             imagetoimage71 = word3;
@@ -542,6 +550,7 @@ class _SecondSentenceBlock5State extends State<SecondSentenceBlock5> {
             resultb5s2[1] = false;
             placedwordb5s2[1] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s2[1] = '2b';
             break;
         }
         break;

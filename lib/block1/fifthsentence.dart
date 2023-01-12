@@ -273,16 +273,16 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
                         if (!droplist[1] || (droplist[partnerofimage2] && !droplist[1])) {
                           return Draggable<String>(
                             data: 'tickling2',
-                            feedback: word3,
-                            childWhenDragging: word3tragged,
-                            child: word3,
+                            feedback: word2,
+                            childWhenDragging: word2tragged,
+                            child: word2,
                           );
                         } else {
-                          return word3tragged;
+                          return word2tragged;
                         }
                       },
                       onWillAccept: (data) {
-                        return data == word3;
+                        return data == word2;
                       },
                       onAccept: (data) {
                         setState(() {
@@ -309,27 +309,27 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
                           List<dynamic> accepted,
                           List<dynamic> rejected,
                           ) {
-                        if (!droplist[3] || (droplist[partnerofimage4] && !droplist[3])) {
+                        if (!droplist[2] || (droplist[partnerofimage3] && !droplist[2])) {
                           return Draggable<String>(
-                            data: 'tickling4',
-                            feedback: word2,
-                            childWhenDragging: word2tragged,
-                            child: word2,
+                            data: 'tickling3',
+                            feedback: word3,
+                            childWhenDragging: word3tragged,
+                            child: word3,
                           );
                         } else {
-                          return word2tragged;
+                          return word3tragged;
                         }
                       },
                       onWillAccept: (data) {
-                        return data == word2;
+                        return data == word3;
                       },
                       onAccept: (data) {
                         setState(() {
-                          counterlist[partnerofimage4]--;
-                          droplist[partnerofimage4] = true;
-                          droplist[3] = false;
-                          if (lastimagedropped.contains(partnerofimage4+1)) {
-                            lastimagedropped.remove(partnerofimage4+1);
+                          counterlist[partnerofimage3]--;
+                          droplist[partnerofimage3] = true;
+                          droplist[2] = false;
+                          if (lastimagedropped.contains(partnerofimage3+1)) {
+                            lastimagedropped.remove(partnerofimage3+1);
                           }
                         });
                       },
@@ -348,9 +348,9 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
                           List<dynamic> accepted,
                           List<dynamic> rejected,
                           ) {
-                        if (!droplist[2] || (droplist[partnerofimage3] && !droplist[2])) {
+                        if (!droplist[3] || (droplist[partnerofimage4] && !droplist[3])) {
                           return Draggable<String>(
-                            data: 'tickling3',
+                            data: 'tickling4',
                             feedback: word4,
                             childWhenDragging: word4tragged,
                             child: word4,
@@ -364,11 +364,11 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
                       },
                       onAccept: (data) {
                         setState(() {
-                          counterlist[partnerofimage3]--;
-                          droplist[partnerofimage3] = true;
-                          droplist[2] = false;
-                          if (lastimagedropped.contains(partnerofimage3+1)) {
-                            lastimagedropped.remove(partnerofimage3+1);
+                          counterlist[partnerofimage4]--;
+                          droplist[partnerofimage4] = true;
+                          droplist[3] = false;
+                          if (lastimagedropped.contains(partnerofimage4+1)) {
+                            lastimagedropped.remove(partnerofimage4+1);
                           }
                         });
                       },
@@ -608,25 +608,25 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             codewordb1s5[7] = '5a';
             break;
           case 'tickling2':
-            imagetoimage51 = word3;
-            imagetoimage52 = word3squared;
+            imagetoimage51 = word2;
+            imagetoimage52 = word2squared;
             resultb1s5[7] = false;
             placedwordb1s5[7] = 'die';
             worddroppedorder.add('die');
             codewordb1s5[7] = '3a';
             break;
           case 'tickling3':
-            imagetoimage51 = word4;
-            imagetoimage52 = word4squared;
-            resultb1s5[7] = true;
+            imagetoimage51 = word3;
+            imagetoimage52 = word3squared;
+            resultb1s5[7] = false;
             placedwordb1s5[7] = 'Frau';
             worddroppedorder.add('Frau');
             codewordb1s5[7] = '3b';
             break;
           case 'tickling4':
-            imagetoimage51 = word2;
-            imagetoimage52 = word2squared;
-            resultb1s5[7] = false;
+            imagetoimage51 = word4;
+            imagetoimage52 = word4squared;
+            resultb1s5[7] = true;
             placedwordb1s5[7] = 'rettet';
             worddroppedorder.add('rettet');
             codewordb1s5[7] = '1a';
@@ -644,24 +644,24 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             codewordb1s5[6] = '5a';
             break;
           case 'tickling2':
-            imagetoimage61 = word3;
-            imagetoimage62 = word3squared;
-            resultb1s5[6] = true;
+            imagetoimage61 = word2;
+            imagetoimage62 = word2squared;
+            resultb1s5[6] = false;
             placedwordb1s5[6] = 'die';
             worddroppedorder.add('die');
             codewordb1s5[6] = '3a';
             break;
           case 'tickling3':
-            imagetoimage61 = word4;
-            imagetoimage62 = word4squared;
-            resultb1s5[6] = false;
+            imagetoimage61 = word3;
+            imagetoimage62 = word3squared;
+            resultb1s5[6] = true;
             placedwordb1s5[6] = 'Frau';
             worddroppedorder.add('Frau');
             codewordb1s5[6] = '3b';
             break;
           case 'tickling4':
-            imagetoimage61 = word2;
-            imagetoimage62 = word2squared;
+            imagetoimage61 = word4;
+            imagetoimage62 = word4squared;
             resultb1s5[6] = false;
             placedwordb1s5[6] = 'rettet';
             worddroppedorder.add('rettet');
@@ -680,25 +680,25 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             codewordb1s5[5] = '5a';
             break;
           case 'tickling2':
-            imagetoimage71 = word3;
-            imagetoimage72 = word3squared;
-            resultb1s5[5] = false;
+            imagetoimage71 = word2;
+            imagetoimage72 = word2squared;
+            resultb1s5[5] = true;
             placedwordb1s5[5] = 'die';
             worddroppedorder.add('die');
             codewordb1s5[5] = '3a';
             break;
           case 'tickling3':
-            imagetoimage71 = word4;
-            imagetoimage72 = word4squared;
+            imagetoimage71 = word3;
+            imagetoimage72 = word3squared;
             resultb1s5[5] = false;
             placedwordb1s5[5] = 'Frau';
             worddroppedorder.add('Frau');
             codewordb1s5[5] = '3b';
             break;
           case 'tickling4':
-            imagetoimage71 = word2;
-            imagetoimage72 = word2squared;
-            resultb1s5[5] = true;
+            imagetoimage71 = word4;
+            imagetoimage72 = word4squared;
+            resultb1s5[5] = false;
             placedwordb1s5[5]= 'rettet';
             worddroppedorder.add('rettet');
             codewordb1s5[5] = '1a';
@@ -716,24 +716,24 @@ class _FifthSentenceSetupState extends State<FifthSentenceSetup> {
             codewordb1s5[4] = '5a';
             break;
           case 'tickling2':
-            imagetoimage81 = word3;
-            imagetoimage82 = word3squared;
+            imagetoimage81 = word2;
+            imagetoimage82 = word2squared;
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'die';
             worddroppedorder.add('die');
             codewordb1s5[4] = '3a';
             break;
           case 'tickling3':
-            imagetoimage81 = word4;
-            imagetoimage82 = word4squared;
+            imagetoimage81 = word3;
+            imagetoimage82 = word3squared;
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'Frau';
             worddroppedorder.add('Frau');
             codewordb1s5[4] = '3b';
             break;
           case 'tickling4':
-            imagetoimage81 = word2;
-            imagetoimage82 = word2squared;
+            imagetoimage81 = word4;
+            imagetoimage82 = word4squared;
             resultb1s5[4] = false;
             placedwordb1s5[4] = 'rettet';
             worddroppedorder.add('rettet');

@@ -67,7 +67,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word1 = SizedBox(
+  final word2 = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -75,7 +75,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word1squared = SizedBox(
+  final word2squared = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -83,7 +83,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word1tragged = SizedBox(
+  final word2tragged = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -91,7 +91,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word2 = SizedBox(
+  final word1 = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -99,7 +99,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word2squared = SizedBox(
+  final word1squared = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -107,7 +107,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
     ),
   );
 
-  final word2tragged = SizedBox(
+  final word1tragged = SizedBox(
     height: 200.0,
     width: 200.0,
     child: Center(
@@ -657,7 +657,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
           case 'tickling1':
             imagetoimage71 = word1;
             imagetoimage72 = word1squared;
-            resultb2s1[3] = true;
+            resultb2s1[3] = false;
             placedwordb2s1[3] = 'wird';
             worddroppedorder.add('wird');
             codewordb2s1[3] = '1b';
@@ -681,7 +681,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
           case 'tickling4':
             imagetoimage71 = word2;
             imagetoimage72 = word2squared;
-            resultb2s1[3] = false;
+            resultb2s1[3] = true;
             placedwordb2s1[3] = 'vom';
             worddroppedorder.add('vom');
             codewordb2s1[3] = '4ab';
@@ -693,7 +693,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
           case 'tickling1':
             imagetoimage81 = word1;
             imagetoimage82 = word1squared;
-            resultb2s1[2] = false;
+            resultb2s1[2] = true;
             placedwordb2s1[2] = 'wird';
             worddroppedorder.add('wird');
             codewordb2s1[2] = '1b';
@@ -717,7 +717,7 @@ class _FirstSentenceBlock2State extends State<FirstSentenceBlock2> {
           case 'tickling4':
             imagetoimage81 = word2;
             imagetoimage82 = word2squared;
-            resultb2s1[2] = true;
+            resultb2s1[2] = false;
             placedwordb2s1[2] = 'vom';
             worddroppedorder.add('vom');
             codewordb2s1[2] = '4ab';

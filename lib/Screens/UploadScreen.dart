@@ -218,6 +218,8 @@ class _NewUploadScreenState extends State<NewUploadScreen> {
 
     pizInput = int.parse(pizCtrl.text);
 
+    HttpRequestManager().determineResult(resultb5s6, resultb5s6minmax, 29);
+    // HttpRequestManager().determineCorrectIncorrectForAllSentences();
     HttpRequestManager().makePostRequest();
 
     Future.delayed(const Duration(seconds: 2), () {

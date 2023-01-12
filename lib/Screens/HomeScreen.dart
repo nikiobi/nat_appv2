@@ -185,6 +185,70 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
     resetss4b5s = 0;
     resetss5b5s = 0;
     resetss6b5s = 0;
+
+    codewordb1s1 = ['Der','Junge','','','','','',''];
+    codewordb1s2 = ['Die','Katze','','','','','',''];
+    codewordb1s3 = ['Peter','sah','das','Mädchen','','','',''];
+    codewordb1s4 = ['Wer','','','','','','',''];
+    codewordb1s5 = ['Peter','sah','den','Mann','','','',''];
+    codewordb1s6 = ['Wen','','','','','','',''];
+    codewordb2s1 = ['Die','Frau','','','','','',''];
+    codewordb2s2 = ['Der','Mann','','','','','',''];
+    codewordb2s3 = ['Peter','sah','die','Frau','','','',''];
+    codewordb2s4 = ['Wer','','','','','','',''];
+    codewordb2s5 = ['Peter','sah','den','Jungen','','','',''];
+    codewordb2s6 = ['Wen','','','','','','',''];
+    codewordb3s1 = ['Der','Junge','','','','','',''];
+    codewordb3s2 = ['Wer','','','','','','',''];
+    codewordb3s3 = ['Peter','sah','das','Mädchen','','','',''];
+    codewordb3s4 = ['Das','Mädchen','','','','','',''];
+    codewordb3s5 = ['Wen','','','','','','',''];
+    codewordb3s6 = ['Peter','sah','den','Jungen','','','',''];
+    codewordb4s1 = ['Peter','sah','die','Katze','','','',''];
+    codewordb4s2 = ['Das','Mädchen','','','','','',''];
+    codewordb4s3 = ['Peter','sah','den','Hund','','','',''];
+    codewordb4s4 = ['Wen','','','','','','',''];
+    codewordb4s5 = ['Der','Hund','','','','','',''];
+    codewordb4s6 = ['Wer','','','','','','',''];
+    codewordb5s1 = ['Der','Mann','','','','','',''];
+    codewordb5s2 = ['Wen','','','','','','',''];
+    codewordb5s3 = ['Peter','sah','den','Mann','','','',''];
+    codewordb5s4 = ['Wer','','','','','','',''];
+    codewordb5s5 = ['Peter','sah','den','Mann','','','',''];
+    codewordb5s6 = ['Die','Frau','','','','','',''];
+
+    placedwordb1s1 = ['Der','Junge','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb1s2 = ['Die','Katze','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb1s3 = ['Peter','sah','das','Mädchen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb1s4 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb1s5 = ['Peter','sah','den','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb1s6 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s1 = ['Die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s2 = ['Der','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s3 = ['Peter','sah','die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s4 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s5 = ['Peter','sah','den','Jungen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb2s6 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s1 = ['Der','Junge','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s2 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s3 = ['Peter','sah','das','Mädchen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s4 = ['Das','Mädchen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s5 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb3s6 = ['Peter','sah','den','Jungen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s1 = ['Peter','sah','die','Katze','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s2 = ['Das','Mädchen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s3 = ['Peter','sah','den','Hund','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s4 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s5 = ['Der','Hund','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb4s6 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s1 = ['Der','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s2 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s3 = ['Peter','sah','die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s4 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s5 = ['Peter','sah','den','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+    placedwordb5s6 = ['Die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+
+    sentencesCorrect = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
   }
 
   void _gotosettings() {

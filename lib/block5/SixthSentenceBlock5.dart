@@ -585,6 +585,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[5] = false;
             placedwordb5s6[5] = 'wird';
             worddroppedorder.add('wird');
+            codewordb5s6[5] = '1b';
             break;
           case 'tickling2':
             imagetoimage51 = word3;
@@ -592,6 +593,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[5] = false;
             placedwordb5s6[5] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s6[5] = '4c';
             break;
           case 'tickling3':
             imagetoimage51 = word4;
@@ -599,6 +601,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[5] = true;
             placedwordb5s6[5] = 'gerettet';
             worddroppedorder.add('gerettet');
+            codewordb5s6[5] = '1a';
             break;
           case 'tickling4':
             imagetoimage51 = word2;
@@ -606,6 +609,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[5] = false;
             placedwordb5s6[5] = 'vom';
             worddroppedorder.add('vom');
+            codewordb5s6[5] = '4ab';
             break;
         }
         break;
@@ -617,6 +621,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[4] = false;
             placedwordb5s6[4] = 'wird';
             worddroppedorder.add('wird');
+            codewordb5s6[4] = '1b';
             break;
           case 'tickling2':
             imagetoimage61 = word3;
@@ -624,6 +629,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[4] = true;
             placedwordb5s6[4] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s6[4] = '4c';
             break;
           case 'tickling3':
             imagetoimage61 = word4;
@@ -631,6 +637,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[4] = false;
             placedwordb5s6[4] = 'gerettet';
             worddroppedorder.add('gerettet');
+            codewordb5s6[4] = '1a';
             break;
           case 'tickling4':
             imagetoimage61 = word2;
@@ -638,6 +645,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[4] = false;
             placedwordb5s6[4] = 'vom';
             worddroppedorder.add('vom');
+            codewordb5s6[4] = '4ab';
             break;
         }
         break;
@@ -649,6 +657,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[3] = false;
             placedwordb5s6[3] = 'wird';
             worddroppedorder.add('wird');
+            codewordb5s6[3] = '1b';
             break;
           case 'tickling2':
             imagetoimage71 = word3;
@@ -656,6 +665,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[3] = false;
             placedwordb5s6[3] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s6[3] = '4c';
             break;
           case 'tickling3':
             imagetoimage71 = word4;
@@ -663,6 +673,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[3] = false;
             placedwordb5s6[3] = 'gerettet';
             worddroppedorder.add('gerettet');
+            codewordb5s6[3] = '1a';
             break;
           case 'tickling4':
             imagetoimage71 = word2;
@@ -670,6 +681,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[3] = true;
             placedwordb5s6[3] = 'vom';
             worddroppedorder.add('vom');
+            codewordb5s6[3] = '4ab';
             break;
         }
         break;
@@ -681,6 +693,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[2] = true;
             placedwordb5s6[2] = 'wird';
             worddroppedorder.add('wird');
+            codewordb5s6[2] = '1b';
             break;
           case 'tickling2':
             imagetoimage81 = word3;
@@ -688,6 +701,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[2] = false;
             placedwordb5s6[2] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s6[2] = '4c';
             break;
           case 'tickling3':
             imagetoimage81 = word4;
@@ -695,6 +709,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[2] = false;
             placedwordb5s6[2] = 'gerettet';
             worddroppedorder.add('gerettet');
+            codewordb5s6[2] = '1a';
             break;
           case 'tickling4':
             imagetoimage81 = word2;
@@ -702,6 +717,7 @@ class _SixthSentenceBlock5State extends State<SixthSentenceBlock5> {
             resultb5s6[2] = false;
             placedwordb5s6[2] = 'vom';
             worddroppedorder.add('vom');
+            codewordb5s6[2] = '4ab';
             break;
         }
         break;

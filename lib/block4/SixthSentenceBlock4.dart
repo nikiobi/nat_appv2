@@ -478,6 +478,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[3] = false;
             placedwordb4s6[3] = 'schubst';
             worddroppedorder.add('schubst');
+            codewordb4s6[3] = '1a';
             break;
           case 'tickling2':
             imagetoimage51 = word2;
@@ -485,6 +486,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[3] = false;
             placedwordb4s6[3] = 'das';
             worddroppedorder.add('das');
+            codewordb4s6[3] = '3a';
             break;
           case 'tickling3':
             imagetoimage51 = word3;
@@ -492,6 +494,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[3] = true;
             placedwordb4s6[3] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb4s6[3] = '3b';
             break;
         }
         break;
@@ -503,6 +506,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[2] = false;
             placedwordb4s6[2] = 'schubst';
             worddroppedorder.add('schubst');
+            codewordb4s6[2] = '1a';
             break;
           case 'tickling2':
             imagetoimage61 = word2;
@@ -510,6 +514,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[2] = true;
             placedwordb4s6[2] = 'das';
             worddroppedorder.add('das');
+            codewordb4s6[2] = '3a';
             break;
           case 'tickling3':
             imagetoimage61 = word3;
@@ -517,6 +522,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[2] = false;
             placedwordb4s6[2] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb4s6[2] = '3b';
             break;
         }
         break;
@@ -528,6 +534,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[1] = true;
             placedwordb4s6[1] = 'schubst';
             worddroppedorder.add('schubst');
+            codewordb4s6[1] = '1a';
             break;
           case 'tickling2':
             imagetoimage71 = word2;
@@ -535,6 +542,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[1] = false;
             placedwordb4s6[1] = 'das';
             worddroppedorder.add('das');
+            codewordb4s6[1] = '3a';
             break;
           case 'tickling3':
             imagetoimage71 = word3;
@@ -542,6 +550,7 @@ class _SixSentenceBlock4State extends State<SixSentenceBlock4> {
             resultb4s6[1] = false;
             placedwordb4s6[1] = 'Mädchen';
             worddroppedorder.add('Mädchen');
+            codewordb4s6[1] = '3b';
             break;
         }
         break;

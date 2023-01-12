@@ -605,6 +605,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[7] = false;
             placedwordb4s3[7] = 'der';
             worddroppedorder.add('der');
+            codewordb4s3[7] = '5a';
             break;
           case 'tickling2':
             imagetoimage51 = word3;
@@ -612,6 +613,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[7] = false;
             placedwordb4s3[7] = 'Katze';
             worddroppedorder.add('Katze');
+            codewordb4s3[7] = '3b';
             break;
           case 'tickling3':
             imagetoimage51 = word4;
@@ -619,6 +621,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[7] = true;
             placedwordb4s3[7] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s3[7] = '1a';
             break;
           case 'tickling4':
             imagetoimage51 = word2;
@@ -626,6 +629,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[7] = false;
             placedwordb4s3[7] = 'die';
             worddroppedorder.add('die');
+            codewordb4s3[7] = '3a';
             break;
         }
         break;
@@ -637,6 +641,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[6] = false;
             placedwordb4s3[6] = 'der';
             worddroppedorder.add('der');
+            codewordb4s3[6] = '5a';
             break;
           case 'tickling2':
             imagetoimage61 = word3;
@@ -644,6 +649,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[6] = true;
             placedwordb4s3[6] = 'Katze';
             worddroppedorder.add('Katze');
+            codewordb4s3[6] = '3b';
             break;
           case 'tickling3':
             imagetoimage61 = word4;
@@ -651,6 +657,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[6] = false;
             placedwordb4s3[6] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s3[6] = '1a';
             break;
           case 'tickling4':
             imagetoimage61 = word2;
@@ -658,6 +665,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[6] = false;
             placedwordb4s3[6] = 'die';
             worddroppedorder.add('die');
+            codewordb4s3[6] = '3a';
             break;
         }
         break;
@@ -669,6 +677,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[5] = false;
             placedwordb4s3[5] = 'der';
             worddroppedorder.add('der');
+            codewordb4s3[5] = '5a';
             break;
           case 'tickling2':
             imagetoimage71 = word3;
@@ -676,6 +685,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[5] = false;
             placedwordb4s3[5] = 'Katze';
             worddroppedorder.add('Katze');
+            codewordb4s3[5] = '3b';
             break;
           case 'tickling3':
             imagetoimage71 = word4;
@@ -683,6 +693,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[5] = false;
             placedwordb4s3[5] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s3[5] = '1a';
             break;
           case 'tickling4':
             imagetoimage71 = word2;
@@ -690,6 +701,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[5] = true;
             placedwordb4s3[5] = 'die';
             worddroppedorder.add('die');
+            codewordb4s3[5] = '3a';
             break;
         }
         break;
@@ -701,6 +713,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[4] = true;
             placedwordb4s3[4] = 'der';
             worddroppedorder.add('der');
+            codewordb4s3[4] = '5a';
             break;
           case 'tickling2':
             imagetoimage81 = word3;
@@ -708,6 +721,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[4] = false;
             placedwordb4s3[4] = 'Katze';
             worddroppedorder.add('Katze');
+            codewordb4s3[4] = '3b';
             break;
           case 'tickling3':
             imagetoimage81 = word4;
@@ -715,6 +729,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[4] = false;
             placedwordb4s3[4] = 'jagt';
             worddroppedorder.add('jagt');
+            codewordb4s3[4] = '1a';
             break;
           case 'tickling4':
             imagetoimage81 = word2;
@@ -722,6 +737,7 @@ class _ThirdSentenceBlock4State extends State<ThirdSentenceBlock4> {
             resultb4s3[4] = false;
             placedwordb4s3[4] = 'die';
             worddroppedorder.add('die');
+            codewordb4s3[4] = '3a';
             break;
         }
         break;

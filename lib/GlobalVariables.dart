@@ -151,7 +151,7 @@ List<String> placedwordb4s5 = ['Der','Hund','Nicht plaziert','Nicht plaziert','N
 List<String> placedwordb4s6 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s1 = ['Der','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s2 = ['Wen','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
-List<String> placedwordb5s3 = ['Peter','sah','den','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
+List<String> placedwordb5s3 = ['Peter','sah','die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s4 = ['Wer','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s5 = ['Peter','sah','den','Mann','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
 List<String> placedwordb5s6 = ['Die','Frau','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert','Nicht plaziert'];
@@ -182,7 +182,7 @@ List<String> codewordb4s5 = ['Der','Hund','','','','','',''];
 List<String> codewordb4s6 = ['Wer','','','','','','',''];
 List<String> codewordb5s1 = ['Der','Mann','','','','','',''];
 List<String> codewordb5s2 = ['Wen','','','','','','',''];
-List<String> codewordb5s3 = ['Peter','sah','den','Mann','','','',''];
+List<String> codewordb5s3 = ['Peter','sah','die','Frau','','','',''];
 List<String> codewordb5s4 = ['Wer','','','','','','',''];
 List<String> codewordb5s5 = ['Peter','sah','den','Mann','','','',''];
 List<String> codewordb5s6 = ['Die','Frau','','','','','',''];
@@ -218,6 +218,8 @@ List<int> wordorderb5s3 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s4 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s5 = [0,0,0,0,0,0,0,0];
 List<int> wordorderb5s6 = [0,0,0,0,0,0,0,0];
+
+List<int> sentencesCorrect = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 
 List<String> newurls = <String>[];
 List<String> newurlssaved = <String>[];

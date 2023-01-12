@@ -200,7 +200,7 @@ class _NewUploadSettingsScreenState extends State<NewUploadSettingsScreen> {
   _deletelastUrl() {
     SharedPreferencesManager().loadFromPrefsUrls('urls');
     currentdeleteditem = newurls.last;
-    if (newurls != null && newurls.isNotEmpty && currentdeleteditem != 'https://stuz-redcap.ukl.uni-freiburg.de/api/') {
+    if (newurls != null && newurls.isNotEmpty) {
       newurlssaved = newurls;
       newurlssaved.remove(currentdeleteditem);
       SharedPreferencesManager().saveToPrefs('urls', newurlssaved);
@@ -217,7 +217,7 @@ class _NewUploadSettingsScreenState extends State<NewUploadSettingsScreen> {
   _deletelastToken() {
     SharedPreferencesManager().loadFromPrefsTokens('tokens');
     currentdeleteditem = newtokens.last;
-    if (newtokens != null && newtokens.isNotEmpty && currentdeleteditem != 'A42EF3B269922666C5B4E7811DF2C490') {
+    if (newtokens != null && newtokens.isNotEmpty) {
       newtoknessaved = newtokens;
       newtoknessaved.remove(currentdeleteditem);
       SharedPreferencesManager().saveToPrefs('tokens', newtoknessaved);

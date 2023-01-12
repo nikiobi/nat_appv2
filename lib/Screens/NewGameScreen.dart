@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nat_appv2/GlobalVariables.dart';
 import 'package:nat_appv2/block1/firstsentence.dart';
 import 'package:nat_appv2/block2/FirstSentenceBlock2.dart';
 import 'package:nat_appv2/block3/FirstSentenceBlock3.dart';
@@ -8,7 +7,6 @@ import 'package:nat_appv2/block5/FirstSentenceBlock5.dart';
 import 'package:nat_appv2/Screens/ResultScreen.dart';
 import 'package:nat_appv2/Screens/HomeScreen.dart';
 import 'package:nat_appv2/Screens/UploadSettingsScreen.dart';
-import 'package:nat_appv2/SharedPreferencesManager.dart';
 
 class NewGameScreen extends StatefulWidget {
   const NewGameScreen({super.key});

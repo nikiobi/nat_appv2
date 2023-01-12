@@ -270,27 +270,27 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
                           List<dynamic> accepted,
                           List<dynamic> rejected,
                           ) {
-                        if (!droplist[2] || (droplist[partnerofimage3] && !droplist[2])) {
+                        if (!droplist[1] || (droplist[partnerofimage2] && !droplist[1])) {
                           return Draggable<String>(
-                            data: 'tickling3',
-                            feedback: word4,
-                            childWhenDragging: word4tragged,
-                            child: word4,
+                            data: 'tickling2',
+                            feedback: word2,
+                            childWhenDragging: word2tragged,
+                            child: word2,
                           );
                         } else {
-                          return word4tragged;
+                          return word2tragged;
                         }
                       },
                       onWillAccept: (data) {
-                        return data == word4;
+                        return data == word2;
                       },
                       onAccept: (data) {
                         setState(() {
-                          counterlist[partnerofimage3]--;
-                          droplist[partnerofimage3] = true;
-                          droplist[2] = false;
-                          if (lastimagedropped.contains(partnerofimage3+1)) {
-                            lastimagedropped.remove(partnerofimage3+1);
+                          counterlist[partnerofimage2]--;
+                          droplist[partnerofimage2] = true;
+                          droplist[1] = false;
+                          if (lastimagedropped.contains(partnerofimage2+1)) {
+                            lastimagedropped.remove(partnerofimage2+1);
                           }
                         });
                       },
@@ -309,9 +309,9 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
                           List<dynamic> accepted,
                           List<dynamic> rejected,
                           ) {
-                        if (!droplist[1] || (droplist[partnerofimage2] && !droplist[1])) {
+                        if (!droplist[2] || (droplist[partnerofimage3] && !droplist[2])) {
                           return Draggable<String>(
-                            data: 'tickling2',
+                            data: 'tickling3',
                             feedback: word3,
                             childWhenDragging: word3tragged,
                             child: word3,
@@ -325,11 +325,11 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
                       },
                       onAccept: (data) {
                         setState(() {
-                          counterlist[partnerofimage2]--;
-                          droplist[partnerofimage2] = true;
-                          droplist[1] = false;
-                          if (lastimagedropped.contains(partnerofimage2+1)) {
-                            lastimagedropped.remove(partnerofimage2+1);
+                          counterlist[partnerofimage3]--;
+                          droplist[partnerofimage3] = true;
+                          droplist[2] = false;
+                          if (lastimagedropped.contains(partnerofimage3+1)) {
+                            lastimagedropped.remove(partnerofimage3+1);
                           }
                         });
                       },
@@ -351,16 +351,16 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
                         if (!droplist[3] || (droplist[partnerofimage4] && !droplist[3])) {
                           return Draggable<String>(
                             data: 'tickling4',
-                            feedback: word2,
-                            childWhenDragging: word2tragged,
-                            child: word2,
+                            feedback: word4,
+                            childWhenDragging: word4tragged,
+                            child: word4,
                           );
                         } else {
-                          return word2tragged;
+                          return word4tragged;
                         }
                       },
                       onWillAccept: (data) {
-                        return data == word2;
+                        return data == word4;
                       },
                       onAccept: (data) {
                         setState(() {
@@ -605,27 +605,31 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
             resultb5s3[7]  = false;
             placedwordb5s3[7] = 'die';
             worddroppedorder.add('die');
+            codewordb5s3[7] = '5b';
             break;
-          case 'tickling2':
+          case 'tickling3':
             imagetoimage51 = word3;
             imagetoimage52 = word3squared;
             resultb5s3[7]  = false;
             placedwordb5s3[7] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s3[7] = '2b';
             break;
-          case 'tickling3':
+          case 'tickling4':
             imagetoimage51 = word4;
             imagetoimage52 = word4squared;
             resultb5s3[7]  = true;
             placedwordb5s3[7] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb5s3[7] = '1a';
             break;
-          case 'tickling4':
+          case 'tickling2':
             imagetoimage51 = word2;
             imagetoimage52 = word2squared;
             resultb5s3[7]  = false;
             placedwordb5s3[7] = 'der';
             worddroppedorder.add('der');
+            codewordb5s3[7] = '2a';
             break;
         }
         break;
@@ -637,27 +641,31 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
             resultb5s3[6]  = false;
             placedwordb5s3[6] = 'die';
             worddroppedorder.add('die');
+            codewordb5s3[6] = '5b';
             break;
-          case 'tickling2':
+          case 'tickling3':
             imagetoimage61 = word3;
             imagetoimage62 = word3squared;
             resultb5s3[6]  = true;
             placedwordb5s3[6] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s3[6] = '2b';
             break;
-          case 'tickling3':
+          case 'tickling4':
             imagetoimage61 = word4;
             imagetoimage62 = word4squared;
             resultb5s3[6]  = false;
             placedwordb5s3[6] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb5s3[6] = '1a';
             break;
-          case 'tickling4':
+          case 'tickling2':
             imagetoimage61 = word2;
             imagetoimage62 = word2squared;
             resultb5s3[6]  = false;
             placedwordb5s3[6] = 'der';
             worddroppedorder.add('der');
+            codewordb5s3[6] = '2a';
             break;
         }
         break;
@@ -669,27 +677,31 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
             resultb5s3[5]  = false;
             placedwordb5s3[5] = 'die';
             worddroppedorder.add('die');
+            codewordb5s3[5] = '5b';
             break;
-          case 'tickling2':
+          case 'tickling3':
             imagetoimage71 = word3;
             imagetoimage72 = word3squared;
             resultb5s3[5]  = false;
             placedwordb5s3[5] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s3[5] = '2b';
             break;
-          case 'tickling3':
+          case 'tickling4':
             imagetoimage71 = word4;
             imagetoimage72 = word4squared;
             resultb5s3[5]  = false;
             placedwordb5s3[5] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb5s3[5] = '1a';
             break;
-          case 'tickling4':
+          case 'tickling2':
             imagetoimage71 = word2;
             imagetoimage72 = word2squared;
             resultb5s3[5]  = true;
             placedwordb5s3[5] = 'der';
             worddroppedorder.add('der');
+            codewordb5s3[5] = '2a';
             break;
         }
         break;
@@ -701,27 +713,31 @@ class _ThirdSentenceBlock5State extends State<ThirdSentenceBlock5> {
             resultb5s3[4]  = true;
             placedwordb5s3[4] = 'die';
             worddroppedorder.add('die');
+            codewordb5s3[4] = '5b';
             break;
-          case 'tickling2':
+          case 'tickling3':
             imagetoimage81 = word3;
             imagetoimage82 = word3squared;
             resultb5s3[4]  = false;
             placedwordb5s3[4] = 'Mann';
             worddroppedorder.add('Mann');
+            codewordb5s3[4] = '2b';
             break;
-          case 'tickling3':
+          case 'tickling4':
             imagetoimage81 = word4;
             imagetoimage82 = word4squared;
             resultb5s3[4]  = false;
             placedwordb5s3[4] = 'rettet';
             worddroppedorder.add('rettet');
+            codewordb5s3[4] = '1a';
             break;
-          case 'tickling4':
+          case 'tickling2':
             imagetoimage81 = word2;
             imagetoimage82 = word2squared;
             resultb5s3[4]  = false;
             placedwordb5s3[4] = 'der';
             worddroppedorder.add('der');
+            codewordb5s3[4] = '2a';
             break;
         }
         break;
